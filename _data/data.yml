@@ -1,0 +1,236 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Timothy Horn
+    tagline: CAS-1 | CS/IT Specialist
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: thorn@outboost.com
+    phone: 757 977 7997
+    timezone: America/New York Timezone
+    citizenship: USA
+    website: 757btc.org #do not add http://
+    linkedin: www.linkedin.com/in/thorn81
+    github: nostrsai
+    telegram: fiber
+    pdf: http://www.africau.edu/images/default/sample.pdf
+
+    languages:
+      title: Languages
+      info:
+        - idiom: English
+          level: Native
+
+        - idiom: Spanish
+          level: Intermediate
+
+    interests:
+      title: Interests
+      info:
+        - item: Physics, Whitepapers - Documentaries
+          link: physics.org
+
+        - item: AI & Large Language Models
+          link: chatgpt.openai.com
+
+        - item: Protective Coatings
+          link: sspc.org
+
+career-profile:
+    title: Timothy Horn - 43 - Hampton VA
+    summary: |
+      I started my Computer journey early, 1996. Subsequently, I have also been a part of the Shipyard industry
+      in our area since 2008.  There are references both to my IT certifications, and my Protective Coatings
+      certifications here. While my expertise in IT/CS has increased over 20+ years I also have the benefit
+      of a handful of skilled trades, with 10-15 years experience and found dominance and a sense of contribution
+      helping execute contracts at the behedst of those who serve in our Military.  I appreciate the detail of MIL
+      spec standards, and find sembelance between the intricacies of IT and the specifications and standards we use
+      in todays Protective Coating systems.
+      
+      I am in search of positions which will help me utilize my skillsets, and a positive environment where I 
+      can continue my education while providing valuable work and service.
+        
+education:
+    title: Education
+    info:
+      - degree: First Colonial H.S.
+        university: Virginia Beach
+        time: 1995-1999
+        details: |
+          I attended both Salem and First Colonial in Virginia Beach. Studies included Computer Labs.
+            - Basketball, Chess
+            - Pegasus Program
+      - degree: Queens College
+        university: Flushing, NY
+        time: 2001-2003
+        details: |
+          Studied Anthropology, Computer Science
+            - No Degree
+            - Technical Certifications in lieu
+
+experiences:
+    title: Work Profile
+    info:
+      - role: Blaster, Powder Coater, Sprayer
+        time: 2018 - 2024
+        company: Vanwin Coatings of Virginia
+        details: |
+          While with VanWin Coatings, I learned the precarious task of powder coatings.
+          Able to fill multiple roles, from powder coating, abrasive blasting and painting,
+          I used my experience to help deliver high quality products to our partners in the
+          shipbuilding and repair industry.  Additionally, our facilities executed contracts
+          for industrial and even personal protective coatings.  I assisted in day-to-day
+          operations in-shop and on-site, helped engineer and deploy saftey strategies, maintained
+          machinery as well as provided certified skilled labor.  I was required to assist
+          with shipping and logistics, and operate heavy equipment.
+            - Long Term 
+            - Protective Coatings
+            - Surface Preparation
+            - MIL Spec
+            - OSHA Compliant QP1/QP2 
+      - role: Production Foreman, Blaster, Painter
+        time: 2015 - 2019
+        company: Marine Specialty Painting
+        details: |
+          MSP is where I earned my stripes in the coatings business, starting off at entry level.
+          My first assigned job was Sp-3 surface prep using pneumatic tools.  After gathering
+          experience in applying coatings, removing degraded coatings, and preparing surfaces per
+          MIL Spec, I went on to supervise my own crews, as well as recieve my 7/12/14 certifications.
+            - Entry Point into Protective Coatings
+            - Invaluable Field Experience
+            - Rapid Advancement
+            - Management Experience
+            - Certifications
+            - Multiple roles
+      - role: Technician, Administrator and Developer
+        time: 1999 - 2024
+        company: Outboost Computers
+        details: |
+          During my early days in computing I slowly educated myself in all things Internet.  From
+          graphic design and branding, hardware repair and installation to software development and
+          programming, I learned how to use networking and the internet to it's full potential starting
+          a multi-decade journey of education and appreciation for the technology we all know and use
+          in our day-to-day lives.  Outboost has been a fundamental component of my continued education and
+          expertise in today's CS/IT landscape.
+            - Computer Repair (Certified DELL)
+            - Network Security Administration
+            - Physical Security & Surveillance Systems
+            - Hosting Solutions
+            - Website Development
+            - Graphic Design & Branding
+            - E-Commerce
+            - Payment Processing
+            - Project Management
+            - Wireless Communication
+
+certifications:
+      title: Certifications
+      list:
+        - name: Certified IT Security Professional
+          start: 1999
+          end: 2024
+          organization: CompTIA
+          credentialid: A+ | Network+ | Security+
+          credentialurl: comptia.org
+          credentialname: CompTIA
+          details: |
+            The CompTIA certifications have been a huge benefit to my book, showcasing my ability
+            to operate successful networks.  My education in risk management, vulnerabilities and
+            policy have been useful in other industries. I am very confident in IT situations and
+            pride myself on providing solutions.
+
+        - name: Certified Coatings Application Specialist
+          start: 2015
+          end: 2024
+          organization: Society of Protective Coatings
+          credentialid: C-7 | C-12 | C-14
+          credentialurl: sspc.org
+          credentialname: SSPC
+          details: |
+            My SSPC certifications enable me to supervise and execute Surface Preparation, proper
+            removal of degraded coatings, and Application of Protective Coating systems.  I have a
+            perfect working knowledge of all the systems and tools used in these proceeses, as well
+            as the applicable MIL Spec and OSHA standards.
+
+projects:
+    title: Side Projects
+    intro: >
+      Other things that I'm usually up to:
+    assignments:
+      - title: Founder, Local IT/Blockchain Group
+        link: "#hook"
+        tagline: "Discussions research into decentralization, cryptography and privacy."
+
+      - title: Bitcoin & Nostr Development
+        link: "#"
+        tagline: "Immutable ledgers, and decentralized protocols."
+
+oss:
+    title: Recent Events
+    intro: >
+      Some places we may have met lately!
+    contributions:
+      - title: BTC 2023 Miami
+        link: "#"
+        tagline: "Yearly Bitcoin conference hosted by Bitcoin Magazine"
+
+      - title: NOSTRVille 2023 Nashville
+        link: "#"
+        tagline: "The inaugural Nostr Conference hosted by Bitcoin Park"
+
+      - title: 757BTC.org Portsmouth
+        link: "757btc.org"
+        tagline: "Local Hampton Roads Meetup"
+
+publications:
+    title: Recent Reads
+    intro: |
+      Suggested Reading
+    papers:
+      - title: UFOs and the 21st Century Mind
+        link: "https://www.amazon.com/UFOs-21st-Century-Mind-Definitive/dp/B0CG7FSTQK/ref=sr_1_2?dib=eyJ2IjoiMSJ9.e2D09Jux-h4266JAd2rXbFbceXUCMWF4bCFE-aeIiaBm1NAwZpu6WzANp05NJ8AucEGEao-lhzAXbRRKlVuMkvnQp1JNVCdPqFkrSjCjaZI9H9XWJOhgyvq2srMBi9NtVW_8HexkUAnv4V5eiVLZnK4F3dODiqFiIkXg4MyyInMZQ0H31VEZ3dj3Y5u_NiMmrYroAuHCLOlW-ox4TAPWTZUzmt77-50zgkDFoa5dhNI.9oHXxS9rMeeiGDRQp2e7ERdf7A4eBCPiCJS8BUs2YII&dib_tag=se&qid=1717472213&refinements=p_27%3ARichard+Dolan&s=books&sr=1-2"
+        authors: Richard Dolan
+        conference: Richard Dolan Press
+
+      - title: 48 Laws of Power
+        link: "https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197/ref=sr_1_1?crid=2EN2PYWPNGNNM&dib=eyJ2IjoiMSJ9.T5tgWF9AJ2WBtrFDjeqsUsxUi7riA8z7rmbp7bAbPjERVEACI6qmybFevqpBHI1Virna6JJaGrpjb13nmX8Fx1Gjuz-gGcv3IXogzkMLsSgUe8v5qc5UOtunV0oCY7ZAT-1NCZf-TL5LoJyi4JQ73vNFmF_0q1KaXPBGMgNR1gwEnRgdxfHQTiIKIuzptG1DRitEmzF47Iu5a8mVK4FJ4Ku5O0Jng91EZSHBnId9rlo.5uWz-uVfN2jvlMV0mr_s900IH9r1-h4Mq45PcTMA9m8&dib_tag=se&keywords=Laws+of+power&qid=1717472451&s=books&sprefix=laws+of+power%2Cstripbooks%2C111&sr=1-1"
+        authors: Robert Greene
+        conference: Penguin Books
+
+      - title: Bitcoin Whitepaper
+        link: "https://bitcoin.org/bitcoin.pdf"
+        authors: Satoshi Nakamoto
+        conference: Uknown/2008
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Computers
+        level: 97%
+
+      - name: Construction
+        level: 55%
+
+      - name: Coatings
+        level: 90%
+
+      - name: Management
+        level: 70%
+
+      - name: Programming
+        level: 55%
+
+      - name: Security
+        level: 99%
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="mailto:thorn@outboost.com" target="_blank" rel="nofollow">Timothy Horn</a>
