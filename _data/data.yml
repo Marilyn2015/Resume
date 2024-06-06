@@ -8,13 +8,13 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Timothy Horn
-    tagline: CAS-1 | CS/IT Specialist
+    name: Marilyn Stephens
+    tagline: Computer Systems Administrator
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: thorn@outboost.com
-    phone: 757 977 7997
+    email: marilyn_stephens@hotmail.com
+    phone: 757 218 0565
     timezone: America/New York Timezone
     citizenship: USA
     website: 757btc.org #do not add http://
