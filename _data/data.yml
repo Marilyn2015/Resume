@@ -73,57 +73,21 @@ education:
 experiences:
     title: Work Profile
     info:
-      - role: Blaster, Powder Coater, Sprayer
-        time: 2018 - 2024
-        company: Vanwin Coatings of Virginia
+      - role: Computer Systems Administrator
+        time: 2023 - 2024
+        company: Bering Sea Enviromental LLC
         details: |
-          While with VanWin Coatings, I learned the precarious task of powder coatings.
-          Able to fill multiple roles, from powder coating, abrasive blasting and painting,
-          I used my experience to help deliver high quality products to our partners in the
-          shipbuilding and repair industry.  Additionally, our facilities executed contracts
-          for industrial and even personal protective coatings.  I assisted in day-to-day
-          operations in-shop and on-site, helped engineer and deploy saftey strategies, maintained
-          machinery as well as provided certified skilled labor.  I was required to assist
-          with shipping and logistics, and operate heavy equipment.
-            - Long Term 
-            - Protective Coatings
-            - Surface Preparation
-            - MIL Spec
-            - OSHA Compliant QP1/QP2 
-      - role: Production Foreman, Blaster, Painter
-        time: 2015 - 2019
-        company: Marine Specialty Painting
+         Operates and maintains the JDS/PCDS/ICADS equipment. Performs and documents preventative or corrective maintenance tasks on equipment. Performs and documents organizational and intermediate level maintenance as required. Performs software backups and mission recordings. Assists mission coordinator/RTOs and performs MLU operator functions when required. Receives pre-mission data for from participating squadron and inputs into MLU prior to scheduled mission.
+      - role: Owner
+        time: 2016 - 2023
+        company: Virginia Natural Cleaning Solutions
         details: |
-          MSP is where I earned my stripes in the coatings business, starting off at entry level.
-          My first assigned job was Sp-3 surface prep using pneumatic tools.  After gathering
-          experience in applying coatings, removing degraded coatings, and preparing surfaces per
-          MIL Spec, I went on to supervise my own crews, as well as recieve my 7/12/14 certifications.
-            - Entry Point into Protective Coatings
-            - Invaluable Field Experience
-            - Rapid Advancement
-            - Management Experience
-            - Certifications
-            - Multiple roles
-      - role: Technician, Administrator and Developer
-        time: 1999 - 2024
-        company: Outboost Computers
+         As the sole proprietor of Virginia Natural Cleaning Solutions, priorities include but not limited to marketing and outsourcing for the growth of the company. Providing customer quotes, and accurately keeping track of inventory and bookkeeping. Virginia Natural Cleaning Solutions also is a SWAM approved vendor with various contracts with HUD specializing in inspections. Virginia Natural Cleaning Solutions started as an idea with one or two customers and grew to a full stabilized company with apartment cleaning contracts in Newport News Virginia in an 18-month period.
+      - role: Lead Leasing Consultant
+        time: 2017 - 2022
+        company: SL Nusbaum
         details: |
-          During my early days in computing I slowly educated myself in all things Internet.  From
-          graphic design and branding, hardware repair and installation to software development and
-          programming, I learned how to use networking and the internet to it's full potential starting
-          a multi-decade journey of education and appreciation for the technology we all know and use
-          in our day-to-day lives.  Outboost has been a fundamental component of my continued education and
-          expertise in today's CS/IT landscape.
-            - Computer Repair (Certified DELL)
-            - Network Security Administration
-            - Physical Security & Surveillance Systems
-            - Hosting Solutions
-            - Website Development
-            - Graphic Design & Branding
-            - E-Commerce
-            - Payment Processing
-            - Project Management
-            - Wireless Communication
+         Coordinate and schedule lease applications and lease signings and adhere to compliance requirements. Organization and execute new lease agreements and coordinate move- in processes. Respond to queries/ leads and conduct property inspections. Achievements include raising occupancy from 87% to 96% in a 2-month period which led to a promotion from Leasing Consultant to Lead Leasing Consultant
 
 certifications:
       title: Certifications
@@ -132,7 +96,7 @@ certifications:
           start: 1999
           end: 2024
           organization: CompTIA
-          credentialid: A+ | Network+ | Security+
+          credentialid: A+ | Security+
           credentialurl: comptia.org
           credentialname: CompTIA
           details: |
@@ -150,22 +114,14 @@ projects:
         link: "#hook"
         tagline: "Discussions research into decentralization, cryptography and privacy."
 
-      - title: Bitcoin & Nostr Development
+      - title: Home lab enviroment
         link: "#"
-        tagline: "Immutable ledgers, and decentralized protocols."
+        tagline: "Create a virtual home lab environment to simulate a small network"
 
 oss:
     title: Recent Events
     intro: >
       Some places we may have met lately!
-    contributions:
-      - title: BTC 2023 Miami
-        link: "#"
-        tagline: "Yearly Bitcoin conference hosted by Bitcoin Magazine"
-
-      - title: NOSTRVille 2023 Nashville
-        link: "#"
-        tagline: "The inaugural Nostr Conference hosted by Bitcoin Park"
 
       - title: 757BTC.org Portsmouth
         link: "757btc.org"
@@ -176,16 +132,6 @@ publications:
     intro: |
       Suggested Reading
     papers:
-      - title: UFOs and the 21st Century Mind
-        link: "https://www.amazon.com/UFOs-21st-Century-Mind-Definitive/dp/B0CG7FSTQK/ref=sr_1_2?dib=eyJ2IjoiMSJ9.e2D09Jux-h4266JAd2rXbFbceXUCMWF4bCFE-aeIiaBm1NAwZpu6WzANp05NJ8AucEGEao-lhzAXbRRKlVuMkvnQp1JNVCdPqFkrSjCjaZI9H9XWJOhgyvq2srMBi9NtVW_8HexkUAnv4V5eiVLZnK4F3dODiqFiIkXg4MyyInMZQ0H31VEZ3dj3Y5u_NiMmrYroAuHCLOlW-ox4TAPWTZUzmt77-50zgkDFoa5dhNI.9oHXxS9rMeeiGDRQp2e7ERdf7A4eBCPiCJS8BUs2YII&dib_tag=se&qid=1717472213&refinements=p_27%3ARichard+Dolan&s=books&sr=1-2"
-        authors: Richard Dolan
-        conference: Richard Dolan Press
-
-      - title: 48 Laws of Power
-        link: "https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197/ref=sr_1_1?crid=2EN2PYWPNGNNM&dib=eyJ2IjoiMSJ9.T5tgWF9AJ2WBtrFDjeqsUsxUi7riA8z7rmbp7bAbPjERVEACI6qmybFevqpBHI1Virna6JJaGrpjb13nmX8Fx1Gjuz-gGcv3IXogzkMLsSgUe8v5qc5UOtunV0oCY7ZAT-1NCZf-TL5LoJyi4JQ73vNFmF_0q1KaXPBGMgNR1gwEnRgdxfHQTiIKIuzptG1DRitEmzF47Iu5a8mVK4FJ4Ku5O0Jng91EZSHBnId9rlo.5uWz-uVfN2jvlMV0mr_s900IH9r1-h4Mq45PcTMA9m8&dib_tag=se&keywords=Laws+of+power&qid=1717472451&s=books&sprefix=laws+of+power%2Cstripbooks%2C111&sr=1-1"
-        authors: Robert Greene
-        conference: Penguin Books
-
       - title: Bitcoin Whitepaper
         link: "https://bitcoin.org/bitcoin.pdf"
         authors: Satoshi Nakamoto
