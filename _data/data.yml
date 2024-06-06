@@ -29,9 +29,6 @@ sidebar:
         - idiom: English
           level: Native
 
-        - idiom: Spanish
-          level: Intermediate
-
     interests:
       title: Interests
       info:
@@ -41,8 +38,8 @@ sidebar:
         - item: AI & Large Language Models
           link: chatgpt.openai.com
 
-        - item: Protective Coatings
-          link: sspc.org
+        - item: Science Journal
+          link: science.org/journals
 
 career-profile:
     title: Marilyn Stephens - 41 - Hampton VA
