@@ -122,7 +122,7 @@ oss:
     title: Recent Events
     intro: >
       Some places we may have met lately!
-
+      - contributions:
       - title: 757BTC.org Portsmouth
         link: "757btc.org"
         tagline: "Local Hampton Roads Meetup"
