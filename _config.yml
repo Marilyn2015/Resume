@@ -1,20 +1,20 @@
 #Update all the sections by editing the data.yml file inside _data folder.
 
 # Site Settings
-title: Networking with Timothy Horn
-url: 'https://nostrsai.github.io/2024/'
+title: Unlock the door to my digital world of IT expertise!
+url: 'https://marilyn2015.github.io/-Resume/'
 
 #change it according to your repository name
 # disabling since we are using a custom domain
 #baseurl: '/online-cv' 
 
-description: 2024 Lineup
+description: Dive into my respository to explore a dynamic showcase of my technical skills, specifications, and hands on experience.
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: blue # blue turquoise green berry orange ceramic
+theme_skin: ceramic # blue turquoise green berry orange ceramic
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
 # Tracker
-analytics: UA-83979019-1
+analytics: MS-541
 
 # Sass/SCSS
 sass:
