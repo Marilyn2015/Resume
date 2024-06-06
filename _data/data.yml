@@ -45,25 +45,31 @@ sidebar:
           link: sspc.org
 
 career-profile:
-    title: Timothy Horn - 43 - Hampton VA
+    title: Marilyn Stephens - 41 - Hampton VA
     summary: |
-      A highly motivated and detail-oriented professional seeking a challenging role in tech support. With a CompTIA A+ certification and Security+ certification, I am ready to utilize my strong communication and interpersonal skills, as well as my passion for technology, to excel in the technical field. I am a seasoned sales professional seeking to make a transition into the exciting world of Information Technology with a particular focus on security or troubleshooting networks. As a self-taught enthusiast, I have also familiarized myself with tools such as virtual machines, active directory and Linux to enhance my learning curve
+      A highly motivated and detail-oriented professional seeking a challenging role in tech support. 
+      With a CompTIA A+ certification and Security+ certification, I am ready to utilize my strong communication 
+      and interpersonal skills, as well as my passion for technology, to excel in the technical field. 
+      I am a seasoned sales professional seeking to make a transition into the exciting world of Information Technology 
+      with a particular focus on security or troubleshooting networks. As a self-taught enthusiast, 
+      I have also familiarized myself with tools such as virtual machines, active directory and 
+      Linux to enhance my learning curve
         
 education:
     title: Education
     info:
-      - degree: First Colonial H.S.
-        university: Virginia Beach
-        time: 1995-1999
+      - degree: Bethel High School
+        university: Hampton
+        time: 1997-2001
         details: |
-          I attended both Salem and First Colonial in Virginia Beach. Studies included Computer Labs.
-            - Basketball, Chess
+          I attended Bethel High and mystudies included Computer Labs and sports.
+            - Computers, Sports
             - Pegasus Program
-      - degree: Queens College
-        university: Flushing, NY
-        time: 2001-2003
+      - degree: Virginia Peninsula Community Colleges
+        university: Hampton
+        time: 2021-2024
         details: |
-          Studied Anthropology, Computer Science
+          Studied Computer Science and Information Technology
             - No Degree
             - Technical Certifications in lieu
 
@@ -138,19 +144,6 @@ certifications:
             policy have been useful in other industries. I am very confident in IT situations and
             pride myself on providing solutions.
 
-        - name: Certified Coatings Application Specialist
-          start: 2015
-          end: 2024
-          organization: Society of Protective Coatings
-          credentialid: C-7 | C-12 | C-14
-          credentialurl: sspc.org
-          credentialname: SSPC
-          details: |
-            My SSPC certifications enable me to supervise and execute Surface Preparation, proper
-            removal of degraded coatings, and Application of Protective Coating systems.  I have a
-            perfect working knowledge of all the systems and tools used in these proceeses, as well
-            as the applicable MIL Spec and OSHA standards.
-
 projects:
     title: Side Projects
     intro: >
@@ -224,4 +217,4 @@ skills:
         level: 99%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="mailto:thorn@outboost.com" target="_blank" rel="nofollow">Timothy Horn</a>
+    Designed with <i class="fas fa-heart"></i> by <a href="mailto:thorn@outboost.com" target="_blank" rel="nofollow">Marilyin</a>
