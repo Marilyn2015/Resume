@@ -198,22 +198,22 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Computers
-        level: 97%
-
-      - name: Construction
-        level: 55%
-
-      - name: Coatings
-        level: 90%
-
       - name: Management
         level: 70%
 
-      - name: Programming
-        level: 55%
+      - name: Information Technology
+        level: 76%
 
-      - name: Security
+      - name: Network Administration
+        level: 65%
+
+      - name: Security Frameworks
+        level: 85%
+
+      - name: Ethic
+        level: 98%
+
+      - name: Sales
         level: 99%
 
 footer: >
