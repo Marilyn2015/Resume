@@ -106,17 +106,12 @@ certifications:
             pride myself on providing solutions.
 
 projects:
-    title: Side Projects
+    title: Security Clearance
     intro: >
-      Other things that I'm usually up to:
+      My security clearance status is ACTIVE.
     assignments:
-      - title: Founder, Local IT/Blockchain Group
-        link: "#hook"
-        tagline: "Discussions research into decentralization, cryptography and privacy."
-
-      - title: Home lab enviroment
-        link: "#"
-        tagline: "Create a virtual home lab environment to simulate a small network"
+      - title: Top Secret Compartmented Information 
+        tagline: "SCI Government Clearance Langley VA"
 
 publications:
     title: Recent Reads
