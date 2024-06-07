@@ -114,7 +114,8 @@ projects:
         tagline: "SCI Government Clearance Langley VA"
 
 publications:
-    title: Recent Reading:
+    title: Recent Reading
+     
     intro: |
     papers:
       - title: Bitcoin Whitepaper
