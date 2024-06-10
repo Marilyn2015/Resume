@@ -34,14 +34,14 @@ sidebar:
     interests:
       title: Interests
       info:
-        - item: Physics, Whitepapers - Documentaries
-          link: https://phys.org/physics-news/
+        - item: Physics, - Documentaries
+          link: https://phys.org
 
         - item: AI & Large Language Models
           link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
 
         - item: Science 
-          link: https://www.sciencedaily.com/
+          link: https://www.sciencedaily.com
 
 career-profile:
     title: Marilyn Stephens - 41 - Hampton VA
