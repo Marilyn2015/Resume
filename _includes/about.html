@@ -1,6 +1,4 @@
-<div class="remove-container container-block">
-  <h2 class="container-block-title">
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,49 +40,55 @@
         <p>Channel Description</p>
         <a href="https://www.wired.com">Visit Wired</a>
     </div>
-    <div class="feed">
-        <div class="item">
-            <img src="https://media.wired.com/photos/666a3a6de419292a314f6286/master/pass/Politics-Lab-AI-Candidates-Politics.jpg" alt="AI Chatbots Are Running for Office Now">
-            <div class="item-title">
-                <a href="https://www.wired.com/story/ai-chatbots-running-for-office/">AI Chatbots Are Running for Office Now</a>
-            </div>
-            <div class="item-description">
-                Meet AI Steve and VIC, the chatbots running for office in 2024.
-            </div>
-            <div class="item-meta">
-                <p><strong>Published:</strong> Thu, 13 Jun 2024 16:25:37 +0000</p>
-                <p><strong>Author:</strong> Leah Feiger</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="https://media.wired.com/photos/666a406ecd2db4ffb305956c/master/pass/WWDC-2024-AI-Fast-Forward-Business-2156971852.jpg" alt="Apple Proved That AI Is a Feature, Not a Product">
-            <div class="item-title">
-                <a href="https://www.wired.com/story/apple-intelligence-ai-feature-not-product/">Apple Proved That AI Is a Feature, Not a Product</a>
-            </div>
-            <div class="item-description">
-                Other tech companies want to sell you chatbots. Apple’s demos show the value of seeing the AI as an integrated, holistic experience rather than a stand-alone app or device.
-            </div>
-            <div class="item-meta">
-                <p><strong>Published:</strong> Thu, 13 Jun 2024 16:00:00 +0000</p>
-                <p><strong>Author:</strong> Will Knight</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="https://media.wired.com/photos/666a2d831f5c6d0ce1fd5fe9/master/pass/business_common_crawl_data_ai_publishers.jpg" alt="Publishers Target Common Crawl In Fight Over AI Training Data">
-            <div class="item-title">
-                <a href="https://www.wired.com/story/the-fight-against-ai-comes-to-a-foundational-data-set/">Publishers Target Common Crawl In Fight Over AI Training Data</a>
-            </div>
-            <div class="item-description">
-                Long-running nonprofit Common Crawl has been a boon to researchers for years. But now its role in AI training data has triggered backlash from publishers.
-            </div>
-            <div class="item-meta">
-                <p><strong>Published:</strong> Thu, 13 Jun 2024 15:21:11 +0000</p>
-                <p><strong>Author:</strong> Kate Knibbs</p>
-            </div>
-        </div>
-        <!-- Repeat above block for each item in the RSS feed -->
-    </div>
+    <div id="feed"></div>
+
+    <script>
+        async function fetchRSS() {
+            const response = await fetch('https://www.wired.com/feed/tag/ai/latest/rss');
+            const rssText = await response.text();
+            const parser = new DOMParser();
+            const rssDoc = parser.parseFromString(rssText, 'application/xml');
+
+            const items = rssDoc.querySelectorAll('item');
+            const feedElement = document.getElementById('feed');
+
+            items.forEach(item => {
+                const title = item.querySelector('title').textContent;
+                const link = item.querySelector('link').textContent;
+                const description = item.querySelector('description').textContent;
+                const pubDate = item.querySelector('pubDate').textContent;
+                const creator = item.querySelector('dc\\:creator').textContent;
+                const thumbnail = item.querySelector('media\\:thumbnail')?.getAttribute('url') || '';
+
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('item');
+
+                if (thumbnail) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = thumbnail;
+                    itemElement.appendChild(imgElement);
+                }
+
+                const titleElement = document.createElement('div');
+                titleElement.classList.add('item-title');
+                titleElement.innerHTML = `<a href="${link}">${title}</a>`;
+                itemElement.appendChild(titleElement);
+
+                const descriptionElement = document.createElement('div');
+                descriptionElement.classList.add('item-description');
+                descriptionElement.textContent = description;
+                itemElement.appendChild(descriptionElement);
+
+                const metaElement = document.createElement('div');
+                metaElement.classList.add('item-meta');
+                metaElement.innerHTML = `<p><strong>Published:</strong> ${new Date(pubDate).toLocaleString()}</p><p><strong>Author:</strong> ${creator}</p>`;
+                itemElement.appendChild(metaElement);
+
+                feedElement.appendChild(itemElement);
+            });
+        }
+
+        fetchRSS();
+    </script>
 </body>
 </html>
-  </h2>
-</div><!--//About-->
