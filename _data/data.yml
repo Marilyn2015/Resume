@@ -112,8 +112,8 @@ projects:
     intro: >
       My security clearance status is ACTIVE.
     assignments:
-      - title: Top Secret Compartmented Information 
-        tagline: "SCI Government Clearance Langley VA"
+      - title: SCI
+        tagline: Active
 
 publications:
     title: Recent Reading
