@@ -7,7 +7,7 @@
     <style>
         #wired-news-widget {
             font-family: Arial, sans-serif;
-            max-width: 300px;
+            max-width: 320px;
             border: 1px solid #ddd;
             padding: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -61,16 +61,7 @@
             const title = item.querySelector('title').textContent;
             const link = item.querySelector('link').textContent;
             const image = item.querySelector('media\\:thumbnail') ? item.querySelector('media\\:thumbnail').getAttribute('url') : 'https://www.wired.com/wp-content/themes/wired/assets/images/post-placeholder.jpg';
-            const listItem = document.createElement('li');
-            const anchor = document.createElement('a');
-            anchor.href = link;
-            anchor.target = '_blank';
-            anchor.textContent = title;
-            const img = document.createElement('img');
-            img.src = image;
-            listItem.appendChild(img);
-            listItem.appendChild(anchor);
-            newsList.appendChild(listItem);
+            newsList.innerHTML += `<li><img src="${image}" alt="News Image"><a href="${link}" target="_blank">${title}</a></li>`;
         });
     }
 
