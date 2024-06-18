@@ -60,7 +60,8 @@
         items.forEach(item => {
             const title = item.querySelector('title').textContent;
             const link = item.querySelector('link').textContent;
-            const image = item.querySelector('media\\:thumbnail') ? item.querySelector('media\\:thumbnail').getAttribute('url') : 'https://www.wired.com/wp-content/themes/wired/assets/images/post-placeholder.jpg';
+            const mediaContent = item.querySelector('media\\:content');
+            const image = mediaContent ? mediaContent.getAttribute('url') : 'https://www.wired.com/wp-content/themes/wired/assets/images/post-placeholder.jpg';
             newsList.innerHTML += `<li><img src="${image}" alt="News Image"><a href="${link}" target="_blank">${title}</a></li>`;
         });
     }
