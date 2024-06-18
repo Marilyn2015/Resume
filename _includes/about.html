@@ -7,28 +7,36 @@
     <style>
         #wired-news-widget {
             font-family: Arial, sans-serif;
-            max-width: 320px;
+            max-width: 100%;
             border: 1px solid #ddd;
             padding: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
         }
         #wired-news-widget h2 {
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin-top: 0;
             text-align: center;
+            color: #333;
         }
         #wired-news-widget ul {
             list-style-type: none;
             padding-left: 0;
+            margin: 0;
         }
         #wired-news-widget li {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        #wired-news-widget li:last-child {
+            border-bottom: none;
         }
         #wired-news-widget img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             object-fit: cover;
             margin-right: 10px;
             border-radius: 5px;
@@ -37,6 +45,10 @@
             text-decoration: none;
             color: #0073e6;
             font-weight: bold;
+            flex: 1;
+        }
+        #wired-news-widget a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -60,7 +72,7 @@
         items.forEach(item => {
             const title = item.querySelector('title').textContent;
             const link = item.querySelector('link').textContent;
-            const mediaContent = item.querySelector('media\\:content');
+            const mediaContent = item.querySelector('media\\:content, enclosure');
             const image = mediaContent ? mediaContent.getAttribute('url') : 'https://www.wired.com/wp-content/themes/wired/assets/images/post-placeholder.jpg';
             newsList.innerHTML += `<li><img src="${image}" alt="News Image"><a href="${link}" target="_blank">${title}</a></li>`;
         });
