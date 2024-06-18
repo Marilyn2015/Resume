@@ -112,8 +112,8 @@ projects:
     intro: >
       My security clearance status is ACTIVE.
     assignments:
-      - title: SCI
-        tagline: Active
+      - title: 
+        tagline: 
 
 publications:
     title: Recent Reading
