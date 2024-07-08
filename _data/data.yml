@@ -89,7 +89,7 @@ certifications:
       title: Certifications
       list:
         - name: Certified IT Security Professional
-          start: 1999
+          start: 2021
           end: 2024
           organization: CompTIA
           credentialid: A+ | Security+ | CYSA+
