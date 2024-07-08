@@ -46,13 +46,7 @@ sidebar:
 career-profile:
     title: Marilyn Stephens - 41 - Hampton VA
     summary: |
-      A highly motivated and detail-oriented professional seeking a challenging role in tech support. 
-      With a CompTIA A+ certification and Security+ certification, I am ready to utilize my strong communication 
-      and interpersonal skills, as well as my passion for technology, to excel in the technical field. 
-      I am a seasoned sales professional seeking to make a transition into the exciting world of Information Technology 
-      with a particular focus on security or troubleshooting networks. As a self-taught enthusiast, 
-      I have also familiarized myself with tools such as virtual machines, active directory and 
-      Linux to enhance my learning curve
+      I'm an enthusiastic IT security professional transitioning from a successful sales career, with certifications in CompTIA A+, Security+, and CYSA+. In my current position, I focus daily on protecting data and diving into the details of cybersecurity. I'm passionate about safeguarding information assets and always eager to learn more and grow in this field. I'm excited to bring my skills and enthusiasm to contribute to a safer technological environment.
         
 education:
     title: Education
@@ -98,7 +92,7 @@ certifications:
           start: 1999
           end: 2024
           organization: CompTIA
-          credentialid: A+ | Security+
+          credentialid: A+ | Security+ | CYSA+
           credentialurl: comptia.org
           credentialname: CompTIA
           details: |
