@@ -95,8 +95,8 @@ certifications:
           credentialid: A+ | Security+ | CYSA+
           credentialurl: comptia.org
           credentialname: CompTIA
-          details: |
-            credly.com/users/marilynstephens/badges
+          link: credly.com/users/marilynstephens/badges
+            
 
 projects:
     title: Security Clearance
