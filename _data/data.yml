@@ -109,10 +109,10 @@ publications:
      
     intro: |
     papers:
-      - title: Bitcoin Whitepaper
-        link: "https://bitcoin.org/bitcoin.pdf"
-        authors: Satoshi Nakamoto
-        conference: Uknown/2008
+      - title: Sapiens
+        link: "https://www.ynharari.com/book/sapiens-2/"
+        authors: Yuval Noah Harari
+        conference: 
 
 skills:
     title: Skills &amp; Proficiency
