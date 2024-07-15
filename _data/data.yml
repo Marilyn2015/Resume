@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Marilyn Stephens
-    tagline: Computer Systems Administrator
+    tagline: Computer Systems Analyst
     avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -69,7 +69,7 @@ education:
 experiences:
     title: Work Profile
     info:
-      - role: Computer Systems Administrator
+      - role: Computer Systems Analyst
         time: 2023 - Present
         company: Bering Sea Enviromental LLC
         details: |
