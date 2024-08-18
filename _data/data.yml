@@ -106,17 +106,14 @@ projects:
 
 publications:
     title: Recent Reading
-     
-    intro: |
+      intro: |
     papers:
       - title: Sapiens
         link: "https://www.ynharari.com/book/sapiens-2/"
         authors: Yuval Noah Harari
         conference: 
-
-        title: Recent Reading
-     
-    intro: |
+   
+      intro: |
     papers:
       - title: The 33 Strategies of War
         link:  "https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene"
