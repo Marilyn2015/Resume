@@ -1,23 +1,16 @@
----
-layout: default
----
-
-
-{% include career-profile.html %}
-
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
-
-{% include experiences.html %}
-
-{% include certifications.html %}
-
-{% include projects.html %}
-
-{% include oss-contributions.html %}
-
-{% include publications.html %}
-
-{% include skills.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics.org</title>
+</head>
+<body>
+    <h1>Physics.org</h1>
+    <p>Explore the world of physics!</p>
+    <iframe src="https://www.physics.org/" width="100%" height="800px"></iframe>
+    <!-- Alternatively, you can provide a link if embedding doesn't work -->
+    <p>If the site doesn't load, <a href="https://www.physics.org/" target="_blank">click here to visit Physics.org</a>.</p>
+</body>
+</html>
 
