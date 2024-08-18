@@ -113,12 +113,7 @@ publications:
         authors: Yuval Noah Harari
         conference: 
       intro: |
-     papers:
-      - title: The 33 Strategies of War
-        link:  "https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene"
-        authors: Robert Greene
-        conference: 
-      intro: |
+    
 
 skills:
     title: Skills &amp; Proficiency
