@@ -1,12 +1,15 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+# Marilyn Stephens' Technology Portfolio
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit [her website](http://themes.3rdwavemedia.com/) for more themes.
+Welcome to **Marilyn Stephens'** technology portfolio. This repository is your gateway to exploring my expertise in the tech industry, including my latest projects, skills, and certifications.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+## About This Repository
+
+This repository is designed to showcase my professional journey and achievements in the field of technology. It is built using a customized Jekyll theme to present my work in a polished and organized manner.
+
+> The theme is based on a design by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
+> You can explore her other designs [here](http://themes.3rdwavemedia.com/).
+
+Take a look at the live demo of my portfolio [here](https://marilyn-stephens.github.io/portfolio).
 
 <table>
   <tr>
@@ -15,76 +18,12 @@ I have made this into a Jekyll Theme. Checkout the live demo [here](https://onli
   </tr>
   <tr>
     <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
+        <img src="https://marilyn-stephens.github.io/portfolio/assets/images/desktop.png" width="600"/>
     </td>
     <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
+        <img src="https://marilyn-stephens.github.io/portfolio/assets/images/mobile.png" width="250"/>
     </td>
   </tr>
 </table>
 
-## Installation
-
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository;
-* Go to settings and set master branch as Github Pages source;
-* Your new site should be ready at `https://<username>.github.io/online-cv/`;
-* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
-
-Change all the details from one place: `_data/data.yml`.
-
-### To preview/edit locally with docker
-
-```sh
-docker-compose up
-```
-
-*docker-compose.yml* file is used to create a container that is reachable under <http://localhost:4000>.
-Changes *_data/data.yml* will be visible after a while.
-
-### Local machine
-
-* Get the repo into your machine 
-
-```bash
-git clone https://github.com/sharu725/online-cv.git
-```
-
-* Install required ruby gems
-
-```bash
-bundle install
-```
-
-* Serve the site locally
-
-```bash
-bundle exec jekyll serve
-```
-
-* Navigate to `http://localhost:4000`
-
-
-## Skins
-
-There are 6 color schemes available:
-
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
-
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
-
-## Credits
-
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
-
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
-
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
 
