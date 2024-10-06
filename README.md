@@ -11,19 +11,6 @@ This repository is designed to showcase my professional journey and achievements
 
 Take a look at the live demo of my portfolio [here](https://marilyn2015.github.io/Resume/).
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://marilyn-stephens.github.io/portfolio/assets/images/desktop.png" width="600"/>
-    </td>
-    <td>
-        <img src="https://marilyn-stephens.github.io/portfolio/assets/images/mobile.png" width="250"/>
-    </td>
-  </tr>
-</table>
+
 
 
