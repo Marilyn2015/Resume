@@ -9,7 +9,7 @@ This repository is designed to showcase my professional journey and achievements
 > The theme is based on a design by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
 > You can explore her other designs [here](http://themes.3rdwavemedia.com/).
 
-Take a look at the live demo of my portfolio [here](https://1drv.ms/p/c/67a9c8173eaa3099/ESo_SpK5celDim6hg_iR2-wBciTWfKADW240DrlDUTU8LQ?e=0x1TJk).
+Take a look at the live demo of my portfolio [here](https://marilyn2015.github.io/Resume/).
 
 <table>
   <tr>
