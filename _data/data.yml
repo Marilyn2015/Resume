@@ -106,9 +106,7 @@ projects:
 
 publications:
     title: Recent Reading
-      intro: |
-    papers:
-      
+      intro: >
       - title: Sapiens
         link: "https://www.ynharari.com/book/sapiens-2/"
         authors: Yuval Noah Harari
