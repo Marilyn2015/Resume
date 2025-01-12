@@ -23,7 +23,7 @@ sidebar:
 
     github: Marilyn2015
     telegram: Phoenix20155
-    pdf: https://1drv.ms/w/s!Apkwqj4XyKlngYVTuTD34_Fuy4OlVg?e=8UOkzA
+    pdf: https://1drv.ms/w/s!Apkwqj4XyKlngYEa38NyC1cOMBPILw?e=tI7Ddy
 
     languages:
       title: Languages
@@ -38,7 +38,7 @@ sidebar:
           link: phys.org
 
         - item: AI & Large Language Models
-          link: https://openai.com/
+          link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
 
         - item: Science 
           link: https://www.sciencedaily.com
@@ -65,7 +65,6 @@ education:
           Studied Computer Science and Information Technology
             - No Degree
             - Technical Certifications in lieu
-
 experiences:
     title: Work Profile
     info:
@@ -73,7 +72,7 @@ experiences:
         time: 2023 - Present
         company: Bering Sea Enviromental LLC
         details: |
-         Responsible for the secure handling and transfer of sensitive data to ICADS and PCDS systems, ensuring data integrity and confidentiality. Perform basic troubleshooting for these systems to maintain operational readiness. Additionally, I oversee radio operations and ensure functionality within the LMOC network. I contributed to the development of our Tempest Package and understand secure data-handling requirements. My responsibilities also include implementing monthly patches and updates to maintain network security in compliance with Department of Defense policies. I am qualified to work in secure environments and uphold a strong commitment to data security and system integrity.
+         Operates and maintains the JDS/PCDS/ICADS equipment. Performs and documents preventative or corrective maintenance tasks on equipment. Performs and documents organizational and intermediate level maintenance as required. Performs software backups and mission recordings. Assists mission coordinator/RTOs and performs MLU operator functions when required. Receives pre-mission data for from participating squadron and inputs into MLU prior to scheduled mission.
       - role: Owner
         time: 2016 - 2023
         company: Virginia Natural Cleaning Solutions
@@ -84,7 +83,6 @@ experiences:
         company: SL Nusbaum
         details: |
          Coordinate and schedule lease applications and lease signings and adhere to compliance requirements. Organization and execute new lease agreements and coordinate move- in processes. Respond to queries/ leads and conduct property inspections. Achievements include raising occupancy from 87% to 96% in a 2-month period which led to a promotion from Leasing Consultant to Lead Leasing Consultant
-
 certifications:
       title: Certifications
       list:
@@ -106,14 +104,22 @@ projects:
 
 publications:
     title: Recent Reading
-      intro: >
+
+    intro: |
+    papers:
       - title: Sapiens
         link: "https://www.ynharari.com/book/sapiens-2/"
         authors: Yuval Noah Harari
         conference: 
-      intro: |
-    
 
+        title: Recent Reading
+     
+    intro: |
+    papers:
+      - title: The 33 Strategies of War
+        link:  "https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene"
+        authors: Robert Greene
+        conference: 
 skills:
     title: Skills &amp; Proficiency
 
