@@ -1,47 +1,34 @@
-<!-- Sidebar Profile Section -->
-<div class="sidebar-profile">
-  <img src="{{ site.sidebar.avatar | prepend: '/assets/images/' }}" alt="{{ site.sidebar.name }}" class="profile-pic" />
-  <h2>{{ site.sidebar.name }}</h2>
-  <p class="tagline">{{ site.sidebar.tagline }}</p>
-</div>
+sidebar:
+  position: right
+  about: True
+  education: True
 
-<!-- Contact Information -->
-<div class="contact-info">
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:{{ site.sidebar.email }}">{{ site.sidebar.email }}</a></li>
-    <li><strong>Phone:</strong> {{ site.sidebar.phone }}</li>
-    <li><strong>Timezone:</strong> {{ site.sidebar.timezone }}</li>
-    <li><strong>Citizenship:</strong> {{ site.sidebar.citizenship }}</li>
-    {% if site.sidebar.website %}
-      <li><strong>Website:</strong> <a href="http://{{ site.sidebar.website }}">{{ site.sidebar.website }}</a></li>
-    {% endif %}
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/{{ site.sidebar.linkedin }}">{{ site.sidebar.linkedin }}</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/{{ site.sidebar.github }}">{{ site.sidebar.github }}</a></li>
-    <li><strong>Telegram:</strong> <a href="https://t.me/{{ site.sidebar.telegram }}">{{ site.sidebar.telegram }}</a></li>
-    <li><strong>Download Resume (PDF):</strong> <a href="{{ site.sidebar.pdf }}">View Document</a></li>
-  </ul>
-</div>
+  name: Marilyn Stephens
+  tagline: Computer Systems Analyst
+  avatar: profile.jpg
 
-<!-- Languages Section -->
-{% if site.sidebar.languages %}
-  <div class="languages">
-    <h3>{{ site.sidebar.languages.title }}</h3>
-    <ul>
-      {% for lang in site.sidebar.languages.info %}
-        <li>{{ lang.idiom }} – {{ lang.level }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endif %}
+  email: marilyn_stephens@hotmail.com
+  phone: 757 218 0565
+  timezone: America/New York Timezone
+  citizenship: USA
+  website: 
+  linkedin: marilynstephens
+  github: Marilyn2015
+  telegram: Phoenix20155
+  pdf: https://1drv.ms/w/c/67a9c8173eaa3099/EbtBKw-f1O1AgldLJRpFPx0B_k3JkyFsO4rMnevRPVtLLw?e=dbXWQH
 
-<!-- Interests Section -->
-{% if site.sidebar.interests %}
-  <div class="interests">
-    <h3>{{ site.sidebar.interests.title }}</h3>
-    <ul>
-      {% for interest in site.sidebar.interests.info %}
-        <li><a href="{{ interest.link }}" target="_blank">{{ interest.item }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endif %}
+  languages:
+    title: Languages
+    info:
+      - idiom: English
+        level: Native
+
+  interests:
+    title: Interests
+    info:
+      - item: Physics & Documentaries
+        link: https://www.phys.org
+      - item: AI & Large Language Models
+        link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
+      - item: Scientific American
+        link: https://www.scientificamerican.com
