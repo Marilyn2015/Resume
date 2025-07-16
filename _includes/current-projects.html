@@ -1,0 +1,9 @@
+{% if site.data.data.current-projects %}
+  <section class="current-projects">
+    <h2>{{ site.data.data.current-projects.title }}</h2>
+    {% for project in site.data.data.current-projects.info %}
+      <h3>{{ project.name }}</h3>
+      <p>{{ project.description }}</p>
+    {% endfor %}
+  </section>
+{% endif %}
