@@ -1,34 +1,41 @@
-sidebar:
-  position: right
-  about: True
-  education: True
+<div class="sidebar-profile">
+  <img src="{{ site.sidebar.avatar | prepend: '/assets/images/' }}" alt="{{ site.sidebar.name }}" class="profile-pic" />
+  <h2 class="sidebar-name">{{ site.sidebar.name }}</h2>
+  <p class="sidebar-tagline">{{ site.sidebar.tagline }}</p>
+</div>
 
-  name: Marilyn Stephens
-  tagline: Computer Systems Analyst
-  avatar: profile.jpg
+<div class="sidebar-contact">
+  <ul>
+    <li><a href="mailto:{{ site.sidebar.email }}">{{ site.sidebar.email }}</a></li>
+    <li>{{ site.sidebar.phone }}</li>
+    <li>{{ site.sidebar.timezone }}</li>
+    <li>{{ site.sidebar.citizenship }}</li>
+    {% if site.sidebar.website %}<li><a href="http://{{ site.sidebar.website }}">{{ site.sidebar.website }}</a></li>{% endif %}
+    <li><a href="https://www.linkedin.com/in/{{ site.sidebar.linkedin }}">LinkedIn</a></li>
+    <li><a href="https://github.com/{{ site.sidebar.github }}">GitHub</a></li>
+    <li><a href="https://t.me/{{ site.sidebar.telegram }}">Telegram</a></li>
+    <li><a href="{{ site.sidebar.pdf }}">Download Resume (PDF)</a></li>
+  </ul>
+</div>
 
-  email: marilyn_stephens@hotmail.com
-  phone: 757 218 0565
-  timezone: America/New York Timezone
-  citizenship: USA
-  website: 
-  linkedin: marilynstephens
-  github: Marilyn2015
-  telegram: Phoenix20155
-  pdf: https://1drv.ms/w/c/67a9c8173eaa3099/EbtBKw-f1O1AgldLJRpFPx0B_k3JkyFsO4rMnevRPVtLLw?e=dbXWQH
+{% if site.sidebar.languages %}
+<div class="sidebar-languages">
+  <h3>{{ site.sidebar.languages.title }}</h3>
+  <ul>
+    {% for lang in site.sidebar.languages.info %}
+      <li>{{ lang.idiom }} — {{ lang.level }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
 
-  languages:
-    title: Languages
-    info:
-      - idiom: English
-        level: Native
-
-  interests:
-    title: Interests
-    info:
-      - item: Physics & Documentaries
-        link: https://www.phys.org
-      - item: AI & Large Language Models
-        link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
-      - item: Scientific American
-        link: https://www.scientificamerican.com
+{% if site.sidebar.interests %}
+<div class="sidebar-interests">
+  <h3>{{ site.sidebar.interests.title }}</h3>
+  <ul>
+    {% for interest in site.sidebar.interests.info %}
+      <li><a href="{{ interest.link }}">{{ interest.item }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
