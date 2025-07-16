@@ -1,33 +1,47 @@
-{% assign sidebar = site.data.data.sidebar %}
-<div class="sidebar-wrapper">
+<!-- Sidebar Profile Section -->
+<div class="sidebar-profile">
+  <img src="{{ site.sidebar.avatar | prepend: '/assets/images/' }}" alt="{{ site.sidebar.name }}" class="profile-pic" />
+  <h2>{{ site.sidebar.name }}</h2>
+  <p class="tagline">{{ site.sidebar.tagline }}</p>
+</div>
 
-  <div class="profile-container">
-
-    {% if sidebar.avatar %}
-    <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
+<!-- Contact Information -->
+<div class="contact-info">
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:{{ site.sidebar.email }}">{{ site.sidebar.email }}</a></li>
+    <li><strong>Phone:</strong> {{ site.sidebar.phone }}</li>
+    <li><strong>Timezone:</strong> {{ site.sidebar.timezone }}</li>
+    <li><strong>Citizenship:</strong> {{ site.sidebar.citizenship }}</li>
+    {% if site.sidebar.website %}
+      <li><strong>Website:</strong> <a href="http://{{ site.sidebar.website }}">{{ site.sidebar.website }}</a></li>
     {% endif %}
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/{{ site.sidebar.linkedin }}">{{ site.sidebar.linkedin }}</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/{{ site.sidebar.github }}">{{ site.sidebar.github }}</a></li>
+    <li><strong>Telegram:</strong> <a href="https://t.me/{{ site.sidebar.telegram }}">{{ site.sidebar.telegram }}</a></li>
+    <li><strong>Download Resume (PDF):</strong> <a href="{{ site.sidebar.pdf }}">View Document</a></li>
+  </ul>
+</div>
 
-    {% if sidebar.name %}
-    <h1 class="name">{{ sidebar.name }}</h1>
-    {% endif %}
+<!-- Languages Section -->
+{% if site.sidebar.languages %}
+  <div class="languages">
+    <h3>{{ site.sidebar.languages.title }}</h3>
+    <ul>
+      {% for lang in site.sidebar.languages.info %}
+        <li>{{ lang.idiom }} – {{ lang.level }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
 
-    {% if sidebar.tagline %}
-    <h3 class="tagline">{{ sidebar.tagline }}</h3>
-    {% endif %}
-
-  </div><!--//profile-container-->
-
-  {% include contact.html %}
-
-  {% if sidebar.education %}
-    {% include education.html %}
-  {% endif %}
-
-  {% include language.html %}
-  {% include interests.html %}
-
-  {% if sidebar.about %}
-    {% include about.html %}
-  {% endif %}
-
-</div><!--//sidebar-wrapper-->
+<!-- Interests Section -->
+{% if site.sidebar.interests %}
+  <div class="interests">
+    <h3>{{ site.sidebar.interests.title }}</h3>
+    <ul>
+      {% for interest in site.sidebar.interests.info %}
+        <li><a href="{{ interest.link }}" target="_blank">{{ interest.item }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
