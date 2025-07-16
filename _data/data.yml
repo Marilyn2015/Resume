@@ -94,6 +94,16 @@ projects:
     - title: 
       tagline: 
 
+current-projects:
+  title: Current Projects
+  info:
+    - name: Decentralized Social Media Platform 
+      description: |
+        I’m actively developing a decentralized social media platform focused on data sovereignty, transparent governance, and bot-free user engagement. The platform will integrate World ID as its core authentication method, enabling proof of personhood and ensuring that every account belongs to a verified human. This implementation helps eliminate bot interference and fosters genuine interactions across the network. The project explores decentralized technologies such as blockchain, peer-to-peer networking, and privacy-first architecture.
+
+        Explore the project on GitHub:
+        https://github.com/Marilyn2015
+
 publications:
   title: Recent Reading
   papers:
