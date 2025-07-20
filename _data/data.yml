@@ -1,134 +1,144 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
 sidebar:
-  position: right
-  about: True
-  education: True
+    position: right # position of the sidebar : left or right
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
 
-  name: Marilyn Stephens
-  tagline: Computer Systems Analyst
-  avatar: profile.jpg
+    # Profile information
+    name: Marilyn Stephens
+    tagline: Computer Systems Analyst
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
-  email: marilyn_stephens@hotmail.com
-  phone: 757 218 0565
-  timezone: America/New York Timezone
-  citizenship: USA
-  website: 
-  linkedin: marilynstephens
-  github: Marilyn2015
-  telegram: Phoenix20155
-  pdf: https://1drv.ms/w/c/67a9c8173eaa3099/EbtBKw-f1O1AgldLJRpFPx0B_k3JkyFsO4rMnevRPVtLLw?e=dbXWQH
+    # Sidebar links
+    email: marilyn_stephens@hotmail.com
+    phone: 757 218 0565
+    timezone: America/New York Timezone
+    citizenship: USA
+    website:  #do not add http://
+    linkedin: marilynstephens
 
-  languages:
-    title: Languages
-    info:
-      - idiom: English
-        level: Native
 
-  interests:
-    title: Interests
-    info:
-      - item: Physics & Documentaries
-        link: https://www.phys.org
-      - item: AI & Large Language Models
-        link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
-      - item: Scientific American
-        link: https://www.scientificamerican.com
+    github: Marilyn2015
+    telegram: Phoenix20155
+    pdf: https://1drv.ms/w/c/67a9c8173eaa3099/EbtBKw-f1O1AgldLJRpFPx0B_k3JkyFsO4rMnevRPVtLLw?e=dbXWQH
+
+    languages:
+      title: Languages
+      info:
+        - idiom: English
+          level: Native
+
+    interests:
+      title: Interests
+      info:
+        - item: Physics, - Documentaries
+          link: phys.org
+
+        - item: AI & Large Language Models
+          link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
+
 
 career-profile:
-  title: Marilyn Stephens - 41 - Hampton VA
-  summary: |
-    Leverage my skills as a professional computer systems analyst and IT administrator with a strong background in DOD and policy-driven environments. With A+, Security+, and CYSA+ certifications, I bring a solid foundation in computer systems and a deep enthusiasm for technology. From self-education to advancing certifications, I continuously seek to expand my knowledge and skills beyond the classroom. In my current role, I focus on data encryption and safeguarding critical assets for the United States Air Force. I’m committed to protecting sensitive information and ensuring the security of vital systems. My love for technology extends beyond my nine-to-five work schedule and into my personal hobbies, reflecting my dedication to the field.
-
+    title: Marilyn Stephens - 41 - Hampton VA
+    summary: |
+       Leverage my skills as a professional computer systems analyst and IT administrator with a strong background in DOD and Policy driven environments. With an A+, Security+, and CYSA+ certifications, I bring a strong foundation in computer systems and a deep enthusiasm for technology. From self education to advancing certifications, I continuously seek to expand my knowledge and skills beyond the classroom. In my current role, I focus on data encryption and safeguarding critical assets for the United States Air Force. I’m committed to protecting sensitive information and ensuring the security of vital systems. My love for technology extends beyond my nine-to-five work schedule and into my personal hobbies, reflecting my dedication to the field.
+        
 education:
-  title: Education
-  info:
-    - degree: Bethel High School
-      university: Hampton
-      time: 1997–2001
-      details: |
-        I attended Bethel High and my studies included computer labs and sports.
-          - Computers, Sports
-          - Pegasus Program
-    - degree: Virginia Peninsula Community Colleges
-      university: Hampton
-      time: 2021–2024
-      details: |
-        Studied Computer Science and Information Technology
-          - No Degree
-          - Technical Certifications in lieu
-
+    title: Education
+    info:
+      - degree: Bethel High School
+        university: Hampton
+        time: 1997-2001
+        details: |
+          I attended Bethel High and mystudies included Computer Labs and sports.
+            - Computers, Sports
+            - Pegasus Program
+      - degree: Virginia Peninsula Community Colleges
+        university: Hampton
+        time: 2021-2024
+        details: |
+          Studied Computer Science and Information Technology
+            - No Degree
+            - Technical Certifications in lieu
 experiences:
-  title: Work Profile
-  info:
-    - role: Computer Systems Analyst
-      time: 2023–Present
-      company: Bering Sea Environmental LLC
-      details: |
-        Responsible for the secure handling and transfer of data to ICADS and PCDS systems, ensuring data integrity and confidentiality. Perform basic troubleshooting for these systems to support operational readiness. Additionally, I oversee radio operations and ensure functionality within the LMOC network. I contributed to the development of our Tempest Package and understand secure data-handling requirements. My responsibilities also include implementing monthly patches and updates to support network security in compliance with Department of Defense policies. I am qualified to work in secure environments and uphold a strong commitment to data security and system integrity.    
-    - role: Owner  
-      time: 2016–2023
-      company: Virginia Natural Cleaning Solutions
-      details: |
-        As the sole proprietor of Virginia Natural Cleaning Solutions, responsibilities included marketing and outsourcing to grow the company, providing customer quotes, and accurately maintaining inventory and bookkeeping. Virginia Natural Cleaning Solutions is a SWAM-approved vendor with various contracts with HUD, specializing in inspections. It began with one or two customers and grew into a fully stabilized company with apartment cleaning contracts in Newport News, Virginia, within an 18-month period.
-    - role: Lead Leasing Consultant
-      time: 2017–2022
-      company: SL Nusbaum
-      details: |
-        Coordinate and schedule lease applications and lease signings, adhering to compliance requirements. Organize and execute new lease agreements and coordinate move-in processes. Respond to queries/leads and conduct property inspections. Achievements include raising occupancy from 87% to 96% in a 2-month period, leading to a promotion from Leasing Consultant to Lead Leasing Consultant.
-
+    title: Work Profile
+    info:
+      - role: Computer Systems Analyst
+        time: 2023 - Present
+        company: Bering Sea Enviromental LLC
+        details: |
+         Responsible for the secure handling and transfer of data to ICADS and PCDS systems, ensuring data integrity and confidentiality. Perform basic troubleshooting for these systems to support operational readiness. Additionally, I oversee radio operations and ensure functionality within the LMOC network. I contributed to the development of our Tempest Package and understand secure data-handling requirements. My responsibilities also include implementing monthly patches and updates to support network security in compliance with Department of Defense policies. I am qualified to work in secure environments and uphold a strong commitment to data security and system integrity.    
+      - role: Owner  
+        time: 2016 - 2023
+        company: Virginia Natural Cleaning Solutions
+        details: |
+         As the sole proprietor of Virginia Natural Cleaning Solutions, priorities include but not limited to marketing and outsourcing for the growth of the company. Providing customer quotes, and accurately keeping track of inventory and bookkeeping. Virginia Natural Cleaning Solutions also is a SWAM approved vendor with various contracts with HUD specializing in inspections. Virginia Natural Cleaning Solutions started as an idea with one or two customers and grew to a full stabilized company with apartment cleaning contracts in Newport News Virginia in an 18-month period.
+      - role: Lead Leasing Consultant
+        time: 2017 - 2022
+        company: SL Nusbaum
+        details: |
+         Coordinate and schedule lease applications and lease signings and adhere to compliance requirements. Organization and execute new lease agreements and coordinate move- in processes. Respond to queries/ leads and conduct property inspections. Achievements include raising occupancy from 87% to 96% in a 2-month period which led to a promotion from Leasing Consultant to Lead Leasing Consultant
 certifications:
-  title: Certifications
-  list:
-    - name: Certified IT Security Professional
-      start: 2021
-      end: 2024
-      organization: CompTIA
-      credentialid: A+ | Security+ | CYSA+
-      credentialurl: credly.com/users/marilynstephens/badges
-      credentialname: Link to my certifications on Credly
+      title: Certifications
+      list:
+        - name: Certified IT Security Professional
+          start: 2021
+          end: 2024
+          organization: CompTIA
+          credentialid: A+ | Security+ | CYSA+
+          credentialurl: credly.com/users/marilynstephens/badges
+          credentialname: Link to my certifications on Credly
 
 projects:
-  title: Security Clearance
-  intro: >
-    My security clearance status is ACTIVE.
-  assignments:
-    - title: 
-      tagline: 
-
-current-projects:
-  title: Current Projects
-  info:
-    - name: Decentralized Social Media Platform
-      description: |
-        I’m actively developing a decentralized social media platform focused on data sovereignty, transparent governance, and bot-free user engagement. The platform will integrate World ID as its core authentication method, enabling proof of personhood and ensuring that every account belongs to a verified human. This implementation helps eliminate bot interference and fosters genuine interactions across the network. The project explores decentralized technologies such as blockchain, peer-to-peer networking, and privacy-first architecture.
-
-        Explore the project on GitHub:
-        https://github.com/Marilyn2015/github.io/tree/master/Resume
+    title: Security Clearance
+    intro: >
+      My security clearance status is ACTIVE.
+    assignments:
+      - title: 
+        tagline: 
 
 publications:
-  title: Recent Reading
-  papers:
-    - title: Sapiens
-      link: https://www.ynharari.com/book/sapiens-2/
-      authors: Yuval Noah Harari
-    - title: The 33 Strategies of War
-      link: https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene
-      authors: Robert Greene
+    title: Recent Reading
 
+    intro: |
+    papers:
+      - title: Sapiens
+        link: "https://www.ynharari.com/book/sapiens-2/"
+        authors: Yuval Noah Harari
+        conference: 
+
+        title: Recent Reading
+     
+    intro: |
+    papers:
+      - title: The 33 Strategies of War
+        link:  "https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene"
+        authors: Robert Greene
+        conference: 
 skills:
-  title: Skills & Proficiency
-  toolset:
-    - name: Management
-      level: 70%
-    - name: Information Technology
-      level: 76%
-    - name: Network Administration
-      level: 65%
-    - name: Security Frameworks
-      level: 85%
-    - name: Ethic
-      level: 98%
-    - name: Sales
-      level: 99%
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Management
+        level: 70%
+
+      - name: Information Technology
+        level: 76%
+
+      - name: Network Administration
+        level: 65%
+
+      - name: Security Frameworks
+        level: 85%
+
+      - name: Ethic
+        level: 98%
+
+      - name: Sales
+        level: 99%
 
 footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="mailto:thorn@outboost.com" target="_blank" rel="nofollow">Marilyn</a>
+    Designed with <i class="fas fa-heart"></i> by <a href="mailto:thorn@outboost.com" target="_blank" rel="nofollow">Marilyin</a>
