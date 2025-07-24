@@ -16,3 +16,27 @@ $sidebar-order: 2;
 
 @import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials
+.main-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
