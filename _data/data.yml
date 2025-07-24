@@ -17,7 +17,7 @@ sidebar:
     phone: 757-218-0565
     timezone: America/New_York
     citizenship: USA
-    website:
+    website: hashtaghumanity.world
     linkedin: marilynstephens
     xing:
     github: Marilyn2015
@@ -68,9 +68,9 @@ experiences:
         time: 2023–Present
         company: Bering Sea Environmental LLC
         details: |
-          Manage secure data transfers (ICADS, PCDS), troubleshoot systems, and oversee LMOC radio ops. Helped develop the Tempest Package and support monthly patching for network hardening.
-            - Bullet point
-            - Bullet point
+          I am currently a Computer System Administrator with Bearing Sea where I coordinate Flight OPS with Langley AFB and the F-22 and T-39 squandrons.
+            - Manage secure data transfers (ICADS, PCDS), troubleshoot systems, and oversee LMOC radio ops.
+            - Helped develop the Tempest Package and support monthly patching for network hardening.
       - role: Owner
         time: 2016–2023
         company: Virginia Natural Cleaning Solutions
