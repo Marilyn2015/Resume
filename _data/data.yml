@@ -1,82 +1,175 @@
-sidebar: position: right about: true education: true
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
 
-name: Marilyn Stephens tagline: Computer Systems Analyst avatar: profile.jpg   # place in /assets/images/
+sidebar:
+    position: right
+    about: True
+    education: True
 
-email: marilyn_stephens@hotmail.com phone: 757-218-0565 timezone: America/New_York citizenship: USA website: linkedin: marilynstephens github: Marilyn2015 telegram: Phoenix20155 pdf: https://1drv.ms/w/c/67a9c8173eaa3099/EbtBKw-f1O1AgldLJRpFPx0B_k3JkyFsO4rMnevRPVtLLw?e=dbXWQH
+    # Profile information
+    name: Marilyn Stephens
+    tagline: Computer Systems Analyst
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
-languages: title: Languages info: - idiom: English level: Native
+    # Sidebar links
+    email: marilyn_stephens@hotmail.com
+    phone: 757-218-0565
+    timezone: America/New_York
+    citizenship: USA
+    website:
+    linkedin: marilynstephens
+    xing:
+    github: Marilyn2015
+    telegram: Phoenix20155
+    gitlab:
+    bitbucket:
+    twitter:
+    stack-overflow:
+    codewars:
+    goodreads:
+    pdf: https://1drv.ms/w/c/67a9c8173eaa3099/EbtBKw-f1O1AgldLJRpFPx0B_k3JkyFsO4rMnevRPVtLLw?e=dbXWQH
 
-interests: title: Interests info: - item: Physics & Documentaries link: https://phys.org - item: AI & Large Language Models link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
+    languages:
+      title: Languages
+      info:
+        - idiom: English
+          level: Native
 
-career-profile: title: Marilyn Stephens – 41 – Hampton VA summary: | Leverage my skills as a professional computer systems analyst and IT administrator with a strong background in DOD and policy-driven environments. With A+, Security+, and CYSA+ certifications, I bring a strong foundation in systems and a deep enthusiasm for technology. In my current role, I focus on data encryption and safeguarding critical assets for the USAF. I’m committed to protecting sensitive information and extending my knowledge beyond the job.
+    interests:
+      title: Interests
+      info:
+        - item: Physics & Documentaries
+          link: https://phys.org
 
-education: title: Education info: - degree: Bethel High School university: Hampton time: 1997–2001 details: | - Pegasus Program - Computer Labs, Sports - degree: Computer Science / IT (Non-Degree) university: Virginia Peninsula Community College time: 2021–2024 details: | - Studied Computer Science - Focused on certifications instead of degree
+        - item: AI & Large Language Models
+          link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
 
-experiences: title: Work Profile info: - role: Computer Systems Analyst time: 2023–Present company: Bering Sea Environmental LLC details: | Manage secure data transfers (ICADS, PCDS), troubleshoot systems, and oversee LMOC radio ops. Helped develop the Tempest Package and support monthly patching for network hardening.
+career-profile:
+    title: Career Profile
+    summary: |
+      Leverage my skills as a professional computer systems analyst and IT administrator with a strong background in DOD and policy-driven environments. With A+, Security+, and CYSA+ certifications, I bring a strong foundation in systems and a deep enthusiasm for technology. In my current role, I focus on data encryption and safeguarding critical assets for the USAF. I’m committed to protecting sensitive information and extending my knowledge beyond the job.
 
-- role: Owner
-  time: 2016–2023
-  company: Virginia Natural Cleaning Solutions
-  details: |
-    Owned/operated HUD-inspected SWaM vendor. Built business from idea to multiple apartment contracts in 18 months. Handled marketing, finances, and operations.
+education:
+    title: Education
+    info:
+      - degree: Bethel High School
+        university: Hampton
+        time: 1997–2001
+        details: |
+          - Pegasus Program
+          - Computer Labs, Sports
+      - degree: Computer Science / IT (Non-Degree)
+        university: Virginia Peninsula Community College
+        time: 2021–2024
+        details: |
+          - Studied Computer Science
+          - Focused on certifications instead of degree
 
-- role: Lead Leasing Consultant
-  time: 2017–2022
-  company: SL Nusbaum
-  details: |
-    Boosted occupancy from 87% to 96%. Managed move-ins, compliance paperwork, and property showings. Promoted after results.
+experiences:
+    title: Experiences
+    info:
+      - role: Computer Systems Analyst
+        time: 2023–Present
+        company: Bering Sea Environmental LLC
+        details: |
+          Manage secure data transfers (ICADS, PCDS), troubleshoot systems, and oversee LMOC radio ops. Helped develop the Tempest Package and support monthly patching for network hardening.
+            - Bullet point
+            - Bullet point
+      - role: Owner
+        time: 2016–2023
+        company: Virginia Natural Cleaning Solutions
+        details: |
+          Owned/operated HUD-inspected SWaM vendor. Built business from idea to multiple apartment contracts in 18 months. Handled marketing, finances, and operations.
+            - Bullet point
+            - Bullet point
+      - role: Lead Leasing Consultant
+        time: 2017–2022
+        company: SL Nusbaum
+        details: |
+          Boosted occupancy from 87% to 96%. Managed move-ins, compliance paperwork, and property showings. Promoted after results.
+            - Bullet point
+            - Bullet point
 
-certifications: title: Certifications list: - name: Certified IT Security Professional start: 2021 end: 2024 organization: CompTIA credentialid: A+ | Security+ | CYSA+ credentialurl: https://credly.com/users/marilynstephens/badges credentialname: Link to my certifications on Credly
+certifications:
+      title: Certifications
+      list:
+        - name: Certified IT Security Professional
+          start: 2021
+          end: 2024
+          organization: CompTIA
+          credentialid: A+ | Security+ | CYSA+
+          credentialurl: https://credly.com/users/marilynstephens/badges
+          credentialname: Link to my certifications on Credly
+          details: |
+            Certified IT security professional with multiple CompTIA certifications demonstrating strong expertise in modern frameworks, endpoint security, and vulnerability mitigation. Actively pursuing CYSA+ renewal.
 
-projects: title: Security Clearance intro: My security clearance status is ACTIVE. assignments: - title: Active Clearance tagline: Cleared for handling sensitive systems and secure environments.
+projects:
+    title: Projects
+    intro: >
+      My security clearance status is ACTIVE.
+    assignments:
+      - title: Active Clearance
+        link: "#"
+        tagline: "Cleared for handling sensitive systems and secure environments."
 
-publications: title: Recent Reading papers: - title: Sapiens link: https://www.ynharari.com/book/sapiens-2/ authors: Yuval Noah Harari
+oss:
+    title: OSS Contributions
+    intro: >
+      You can list your open source software contributions in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    contributions:
+      - title: Tempo
+        link: "#"
+        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
-- title: The 33 Strategies of War
-  link: https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene
-  authors: Robert Greene
+      - title: Atom
+        link: "#"
+        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
 
-skills: title: Skills & Proficiency toolset: - name: Management level: 70% - name: Information Technology level: 76% - name: Network Administration level: 65% - name: Security Frameworks level: 85% - name: Ethics level: 98% - name: Sales level: 99%
+      - title: Delta
+        link: "#"
+        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
-footer: > Designed with <i class="fas fa-heart"></i> by <a href="mailto:marilyn_stephens@hotmail.com" target="_blank">Marilyn</a>
+publications:
+    title: Publications
+    intro: |
+      You can list your publications in this section. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+      bibendum fringilla a eu lectus.
+    papers:
+      - title: Sapiens
+        link: https://www.ynharari.com/book/sapiens-2/
+        authors: Yuval Noah Harari
+        conference:
 
+      - title: The 33 Strategies of War
+        link: https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene
+        authors: Robert Greene
+        conference:
 
----
+skills:
+    title: Skills &amp; Proficiency
 
-<!DOCTYPE html><html lang="en">
-{% include head.html %}<body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="{{ site.baseurl }}/assets/images/{{ site.data.data.sidebar.avatar }}" class="avatar" alt="Profile Picture" />
-      <h2>{{ site.data.data.sidebar.name }}</h2>
-      <p class="tagline">{{ site.data.data.sidebar.tagline }}</p><ul class="contact">
-    <li><strong>Email:</strong> <a href="mailto:{{ site.data.data.sidebar.email }}">{{ site.data.data.sidebar.email }}</a></li>
-    <li><strong>Phone:</strong> {{ site.data.data.sidebar.phone }}</li>
-    <li><strong>LinkedIn:</strong> {{ site.data.data.sidebar.linkedin }}</li>
-    <li><strong>GitHub:</strong> {{ site.data.data.sidebar.github }}</li>
-    <li><strong>Telegram:</strong> {{ site.data.data.sidebar.telegram }}</li>
-  </ul>
+    toolset:
+      - name: Management
+        level: 70%
 
-  <h3>{{ site.data.data.sidebar.languages.title }}</h3>
-  <ul>
-    {% for lang in site.data.data.sidebar.languages.info %}
-      <li>{{ lang.idiom }} – {{ lang.level }}</li>
-    {% endfor %}
-  </ul>
+      - name: Information Technology
+        level: 76%
 
-  <h3>{{ site.data.data.sidebar.interests.title }}</h3>
-  <ul>
-    {% for item in site.data.data.sidebar.interests.info %}
-      <li><a href="{{ item.link }}">{{ item.item }}</a></li>
-    {% endfor %}
-  </ul>
-</aside>
+      - name: Network Administration
+        level: 65%
 
-<main class="content">
-  {{ content }}
-</main>
+      - name: Security Frameworks
+        level: 85%
 
-  </div>{% include footer.html %} {% include scripts.html %}
+      - name: Ethics
+        level: 98%
 
-</body>
-</html>
+      - name: Sales
+        level: 99%
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="mailto:marilyn_stephens@hotmail.com" target="_blank">Marilyn</a>
