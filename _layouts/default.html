@@ -1,52 +1,47 @@
 ---
-#Add "layout: compress" here to compress the html code
+# layout: default
 ---
+
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 {% include head.html %}
 
 <body>
-<div class="main-wrapper">
-  <aside class="sidebar">
-    <img src="{{ site.baseurl }}/assets/images/{{ site.data.data.sidebar.avatar }}" class="avatar" alt="Profile Picture" />
-    <h2>{{ site.data.data.sidebar.name }}</h2>
-    <p>{{ site.data.data.sidebar.tagline }}</p>
-    <ul class="contact">
-      <li>Email: <a href="mailto:{{ site.data.data.sidebar.email }}">{{ site.data.data.sidebar.email }}</a></li>
-      <li>Phone: {{ site.data.data.sidebar.phone }}</li>
-      <li>LinkedIn: {{ site.data.data.sidebar.linkedin }}</li>
-      <li>GitHub: {{ site.data.data.sidebar.github }}</li>
-      <li>Telegram: {{ site.data.data.sidebar.telegram }}</li>
-    </ul>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="{{ site.baseurl }}/assets/images/{{ site.data.data.sidebar.avatar }}" class="avatar" alt="Profile Picture" />
+      <h2>{{ site.data.data.sidebar.name }}</h2>
+      <p class="tagline">{{ site.data.data.sidebar.tagline }}</p>
 
-    <h3>{{ site.data.data.sidebar.languages.title }}</h3>
-    <ul>
-      {% for lang in site.data.data.sidebar.languages.info %}
-        <li>{{ lang.idiom }} – {{ lang.level }}</li>
-      {% endfor %}
-    </ul>
+      <ul class="contact">
+        <li><strong>Email:</strong> <a href="mailto:{{ site.data.data.sidebar.email }}">{{ site.data.data.sidebar.email }}</a></li>
+        <li><strong>Phone:</strong> {{ site.data.data.sidebar.phone }}</li>
+        <li><strong>LinkedIn:</strong> {{ site.data.data.sidebar.linkedin }}</li>
+        <li><strong>GitHub:</strong> {{ site.data.data.sidebar.github }}</li>
+        <li><strong>Telegram:</strong> {{ site.data.data.sidebar.telegram }}</li>
+      </ul>
 
-    <h3>{{ site.data.data.sidebar.interests.title }}</h3>
-    <ul>
-      {% for item in site.data.data.sidebar.interests.info %}
-        <li><a href="{{ item.link }}">{{ item.item }}</a></li>
-      {% endfor %}
-    </ul>
-  </aside>
-  <div class="wrapper">
-    {% include sidebar.html %}
+      <h3>{{ site.data.data.sidebar.languages.title }}</h3>
+      <ul>
+        {% for lang in site.data.data.sidebar.languages.info %}
+          <li>{{ lang.idiom }} – {{ lang.level }}</li>
+        {% endfor %}
+      </ul>
 
-    <div class="main-wrapper">
-        {{ content }}
-    </div>
+      <h3>{{ site.data.data.sidebar.interests.title }}</h3>
+      <ul>
+        {% for item in site.data.data.sidebar.interests.info %}
+          <li><a href="{{ item.link }}">{{ item.item }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+
+    <main class="content">
+      {{ content }}
+    </main>
   </div>
 
   {% include footer.html %}
-
-{% include scripts.html %}
+  {% include scripts.html %}
 </body>
-
 </html>
-
