@@ -1,17 +1,17 @@
 sidebar:
-  position: right
-  about: true
-  education: true
+  position: right         # position of the sidebar: left or right
+  about: true             # set to false to remove the "how to use?" section
+  education: true         # move education to the sidebar
 
   # Profile information
   name: Marilyn Stephens
   tagline: Computer Systems Analyst
-  avatar: profile.jpg
+  avatar: profile.jpg     # 100x100px image in /assets/images/
 
   # Sidebar links
   email: marilyn_stephens@hotmail.com
-  phone: 757 218 0565
-  timezone: America/New York
+  phone: 757-218-0565
+  timezone: America/New_York
   citizenship: USA
   website:
   linkedin: marilynstephens
@@ -28,13 +28,13 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: Physics, Documentaries
+      - item: Physics & Documentaries
         link: https://phys.org
       - item: AI & Large Language Models
         link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
 
 career-profile:
-  title: Marilyn Stephens – 41 – Hampton, VA
+  title: Marilyn Stephens – 41 – Hampton VA
   summary: |
     Leverage my skills as a professional computer systems analyst and IT administrator with a strong background in DOD and Policy-driven environments. With an A+, Security+, and CYSA+ certifications, I bring a strong foundation in computer systems and a deep enthusiasm for technology. From self-education to advancing certifications, I continuously seek to expand my knowledge and skills beyond the classroom. In my current role, I focus on data encryption and safeguarding critical assets for the United States Air Force. I’m committed to protecting sensitive information and ensuring the security of vital systems. My love for technology extends beyond my nine-to-five work schedule and into my personal hobbies, reflecting my dedication to the field.
 
@@ -48,32 +48,35 @@ education:
         I attended Bethel High and my studies included computer labs and sports.
           - Computers, Sports
           - Pegasus Program
-    - degree: Computer Science/Information Technology (Non-Degree)
+
+    - degree: Computer Science / IT (Non-Degree)
       university: Virginia Peninsula Community College
       time: 2021–2024
       details: |
-        Studied Computer Science and IT
+        Studied Computer Science and Information Technology
           - No Degree
-          - Focused on certifications and hands-on training
+          - Technical Certifications in lieu
 
 experiences:
   title: Work Profile
   info:
     - role: Computer Systems Analyst
-      time: 2023 – Present
+      time: 2023–Present
       company: Bering Sea Environmental LLC
       details: |
         Responsible for the secure handling and transfer of data to ICADS and PCDS systems, ensuring data integrity and confidentiality. Perform basic troubleshooting for these systems to support operational readiness. Additionally, I oversee radio operations and ensure functionality within the LMOC network. I contributed to the development of our Tempest Package and understand secure data-handling requirements. My responsibilities also include implementing monthly patches and updates to support network security in compliance with Department of Defense policies. I am qualified to work in secure environments and uphold a strong commitment to data security and system integrity.
-    - role: Owner  
-      time: 2016 – 2023
+
+    - role: Owner
+      time: 2016–2023
       company: Virginia Natural Cleaning Solutions
       details: |
-        As the sole proprietor, I managed marketing, outsourcing, quoting, inventory, and bookkeeping. Secured SWaM vendor status with various HUD contracts. Scaled the business from a single client to apartment cleaning contracts in Newport News, VA within 18 months.
+        As the sole proprietor of Virginia Natural Cleaning Solutions, I handled marketing, outsourcing, quotes, inventory, and bookkeeping. I grew the company into a SWaM-approved HUD vendor with apartment contracts in Newport News, VA, scaling it from an idea to full operation in 18 months.
+
     - role: Lead Leasing Consultant
-      time: 2017 – 2022
+      time: 2017–2022
       company: SL Nusbaum
       details: |
-        Coordinated lease applications and compliance paperwork. Handled move-ins, lead responses, and property inspections. Raised occupancy from 87% to 96% in two months, resulting in promotion.
+        Coordinated lease applications and compliance. Scheduled move-ins, conducted property inspections, and responded to leads. Promoted after increasing occupancy from 87% to 96% in just two months.
 
 certifications:
   title: Certifications
@@ -83,7 +86,7 @@ certifications:
       end: 2024
       organization: CompTIA
       credentialid: A+ | Security+ | CYSA+
-      credentialurl: https://www.credly.com/users/marilynstephens/badges
+      credentialurl: https://credly.com/users/marilynstephens/badges
       credentialname: Link to my certifications on Credly
 
 projects:
@@ -91,19 +94,18 @@ projects:
   intro: My security clearance status is ACTIVE.
   assignments:
     - title: Active Clearance
-      tagline: Cleared for access to sensitive information under U.S. Government regulations
+      tagline: Cleared for handling sensitive information
 
 publications:
   title: Recent Reading
   papers:
     - title: Sapiens
-      link: "https://www.ynharari.com/book/sapiens-2/"
+      link: https://www.ynharari.com/book/sapiens-2/
       authors: Yuval Noah Harari
-      conference:
+
     - title: The 33 Strategies of War
-      link: "https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene"
+      link: https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene
       authors: Robert Greene
-      conference:
 
 skills:
   title: Skills & Proficiency
