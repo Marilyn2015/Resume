@@ -30,11 +30,6 @@ sidebar:
     goodreads:
     pdf: https://1drv.ms/w/c/67a9c8173eaa3099/EbtBKw-f1O1AgldLJRpFPx0B_k3JkyFsO4rMnevRPVtLLw?e=dbXWQH
 
-    languages:
-      title: Languages
-      info:
-        - idiom: English
-          level: Native
 
     interests:
       title: Interests
@@ -105,32 +100,13 @@ certifications:
             Certified IT security professional with multiple CompTIA certifications demonstrating strong expertise in modern frameworks, endpoint security, and vulnerability mitigation. Actively pursuing CYSA+ renewal.
 
 projects:
-    title: Projects
+    title: Hashtag Humanity
     intro: >
-      My security clearance status is ACTIVE.
+      I am currently building a social media platform that utilizes WorldID to "proof you're human".
     assignments:
       - title: Active Clearance
         link: "#"
         tagline: "Cleared for handling sensitive systems and secure environments."
-
-oss:
-    title: OSS Contributions
-    intro: >
-      You can list your open source software contributions in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    contributions:
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
     title: Publications
