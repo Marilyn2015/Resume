@@ -1,14 +1,12 @@
 sidebar:
-  position: right         # position of the sidebar: left or right
-  about: true             # set to false to remove the "how to use?" section
-  education: true         # move education to the sidebar
+  position: right
+  about: true
+  education: true
 
-  # Profile information
   name: Marilyn Stephens
   tagline: Computer Systems Analyst
-  avatar: profile.jpg     # 100x100px image in /assets/images/
+  avatar: profile.jpg   # place in /assets/images/
 
-  # Sidebar links
   email: marilyn_stephens@hotmail.com
   phone: 757-218-0565
   timezone: America/New_York
@@ -36,7 +34,7 @@ sidebar:
 career-profile:
   title: Marilyn Stephens – 41 – Hampton VA
   summary: |
-    Leverage my skills as a professional computer systems analyst and IT administrator with a strong background in DOD and Policy-driven environments. With an A+, Security+, and CYSA+ certifications, I bring a strong foundation in computer systems and a deep enthusiasm for technology. From self-education to advancing certifications, I continuously seek to expand my knowledge and skills beyond the classroom. In my current role, I focus on data encryption and safeguarding critical assets for the United States Air Force. I’m committed to protecting sensitive information and ensuring the security of vital systems. My love for technology extends beyond my nine-to-five work schedule and into my personal hobbies, reflecting my dedication to the field.
+    Leverage my skills as a professional computer systems analyst and IT administrator with a strong background in DOD and policy-driven environments. With A+, Security+, and CYSA+ certifications, I bring a strong foundation in systems and a deep enthusiasm for technology. In my current role, I focus on data encryption and safeguarding critical assets for the USAF. I’m committed to protecting sensitive information and extending my knowledge beyond the job.
 
 education:
   title: Education
@@ -45,17 +43,14 @@ education:
       university: Hampton
       time: 1997–2001
       details: |
-        I attended Bethel High and my studies included computer labs and sports.
-          - Computers, Sports
-          - Pegasus Program
-
+        - Pegasus Program
+        - Computer Labs, Sports
     - degree: Computer Science / IT (Non-Degree)
       university: Virginia Peninsula Community College
       time: 2021–2024
       details: |
-        Studied Computer Science and Information Technology
-          - No Degree
-          - Technical Certifications in lieu
+        - Studied Computer Science
+        - Focused on certifications instead of degree
 
 experiences:
   title: Work Profile
@@ -64,19 +59,19 @@ experiences:
       time: 2023–Present
       company: Bering Sea Environmental LLC
       details: |
-        Responsible for the secure handling and transfer of data to ICADS and PCDS systems, ensuring data integrity and confidentiality. Perform basic troubleshooting for these systems to support operational readiness. Additionally, I oversee radio operations and ensure functionality within the LMOC network. I contributed to the development of our Tempest Package and understand secure data-handling requirements. My responsibilities also include implementing monthly patches and updates to support network security in compliance with Department of Defense policies. I am qualified to work in secure environments and uphold a strong commitment to data security and system integrity.
+        Manage secure data transfers (ICADS, PCDS), troubleshoot systems, and oversee LMOC radio ops. Helped develop the Tempest Package and support monthly patching for network hardening.
 
     - role: Owner
       time: 2016–2023
       company: Virginia Natural Cleaning Solutions
       details: |
-        As the sole proprietor of Virginia Natural Cleaning Solutions, I handled marketing, outsourcing, quotes, inventory, and bookkeeping. I grew the company into a SWaM-approved HUD vendor with apartment contracts in Newport News, VA, scaling it from an idea to full operation in 18 months.
+        Owned/operated HUD-inspected SWaM vendor. Built business from idea to multiple apartment contracts in 18 months. Handled marketing, finances, and operations.
 
     - role: Lead Leasing Consultant
       time: 2017–2022
       company: SL Nusbaum
       details: |
-        Coordinated lease applications and compliance. Scheduled move-ins, conducted property inspections, and responded to leads. Promoted after increasing occupancy from 87% to 96% in just two months.
+        Boosted occupancy from 87% to 96%. Managed move-ins, compliance paperwork, and property showings. Promoted after results.
 
 certifications:
   title: Certifications
@@ -94,7 +89,7 @@ projects:
   intro: My security clearance status is ACTIVE.
   assignments:
     - title: Active Clearance
-      tagline: Cleared for handling sensitive information
+      tagline: Cleared for handling sensitive systems and secure environments.
 
 publications:
   title: Recent Reading
