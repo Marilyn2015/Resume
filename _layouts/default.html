@@ -8,6 +8,33 @@
 {% include head.html %}
 
 <body>
+<div class="main-wrapper">
+  <aside class="sidebar">
+    <img src="{{ site.baseurl }}/assets/images/{{ site.data.data.sidebar.avatar }}" class="avatar" alt="Profile Picture" />
+    <h2>{{ site.data.data.sidebar.name }}</h2>
+    <p>{{ site.data.data.sidebar.tagline }}</p>
+    <ul class="contact">
+      <li>Email: <a href="mailto:{{ site.data.data.sidebar.email }}">{{ site.data.data.sidebar.email }}</a></li>
+      <li>Phone: {{ site.data.data.sidebar.phone }}</li>
+      <li>LinkedIn: {{ site.data.data.sidebar.linkedin }}</li>
+      <li>GitHub: {{ site.data.data.sidebar.github }}</li>
+      <li>Telegram: {{ site.data.data.sidebar.telegram }}</li>
+    </ul>
+
+    <h3>{{ site.data.data.sidebar.languages.title }}</h3>
+    <ul>
+      {% for lang in site.data.data.sidebar.languages.info %}
+        <li>{{ lang.idiom }} – {{ lang.level }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>{{ site.data.data.sidebar.interests.title }}</h3>
+    <ul>
+      {% for item in site.data.data.sidebar.interests.info %}
+        <li><a href="{{ item.link }}">{{ item.item }}</a></li>
+      {% endfor %}
+    </ul>
+  </aside>
   <div class="wrapper">
     {% include sidebar.html %}
 
