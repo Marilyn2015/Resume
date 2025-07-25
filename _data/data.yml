@@ -102,13 +102,10 @@ projects:
         link: "#"
         tagline: 
 
-publications:
-    title: Publications
+Additional Information:
+    title: Additional Information
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
-    papers:
+      Active Security Clearance
       - title: Sapiens
         link: https://www.ynharari.com/book/sapiens-2/
         authors: Yuval Noah Harari
