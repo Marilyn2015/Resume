@@ -98,20 +98,12 @@ projects:
       The ultimate vision of #HUMANITY Social is to create a decentralized, human-verified social network that seamlessly integrates with World ID or similar biometric verification methods. Every user on the platform will be a real, living human, authenticated through encrypted verification protocols — no bots, no fakes".
     assignments:
       - title: 
-        link: "#"
+        link: "https://hashtaghumanity.world"
         tagline: 
 
     title: Additional Info
     intro: |
       Active Security Clearance
-      - title: Sapiens
-        link: https://www.ynharari.com/book/sapiens-2/
-        authors: Yuval Noah Harari
-        conference:
-      - title: The 33 Strategies of War
-        link: https://www.grahammann.net/book-notes/the-33-strategies-of-war-robert-greene
-        authors: Robert Greene
-        conference:
 
 skills:
     title: Skills &amp; Proficiency
