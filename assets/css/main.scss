@@ -64,9 +64,9 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 0 12px;
-  font-size: 35px;
-  line-height: 1.05;
-  letter-spacing: -0.6px;
+  font-size: 32px;
+  line-height: 1.08;
+  letter-spacing: -0.8px;
   font-weight: 900;
   color: #ffffff;
 }
@@ -81,14 +81,16 @@ body {
 }
 
 .sidebar .contact {
-  list-style: disc;
-  padding-left: 48px;
+  list-style: none;
+  padding-left: 30px;
   padding-right: 30px;
-  margin: 0 0 24px;
+  margin: 0 0 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .sidebar .contact li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   line-height: 1.5;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -107,10 +109,11 @@ body {
 }
 
 .sidebar ul:not(.contact) {
-  padding-left: 48px;
+  list-style: none;
+  padding-left: 30px;
   padding-right: 30px;
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .sidebar ul:not(.contact) li {
@@ -120,7 +123,7 @@ body {
 
 .content {
   flex: 1;
-  padding: 68px 62px;
+  padding: 74px 68px;
   background: #ffffff;
 }
 
@@ -191,14 +194,10 @@ body {
 
   .sidebar h2,
   .sidebar .tagline,
-  .sidebar h3 {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
+  .sidebar h3,
   .sidebar .contact,
   .sidebar ul:not(.contact) {
-    padding-left: 40px;
+    padding-left: 22px;
     padding-right: 22px;
   }
 }
