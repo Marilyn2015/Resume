@@ -2,9 +2,9 @@
 body {
   font-family: "Roboto", sans-serif;
   color: $text-color-secondary;
-  background: $smoky-white;
-  font-size: 14px;
-  padding: 30px;
+  background: linear-gradient(180deg, #eef2f7 0%, #e8edf5 100%);
+  font-size: 15px;
+  padding: 36px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,34 +19,40 @@ h6 {
 }
 
 a {
-  color: darken($theme-color, 15%);
+  color: darken($theme-color, 12%);
+  transition: all 0.2s ease-in-out;
+
   &:hover {
-    text-decoration: underline;
-    color: darken($theme-color, 30%);
+    text-decoration: none;
+    color: darken($theme-color, 24%);
   }
+
   &:focus {
     text-decoration: none;
   }
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.72;
+  margin-bottom: 0;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  background: $theme-color;
-  max-width: 1120px;
+  background: #fff;
+  max-width: 1180px;
   margin: 0 auto;
   position: relative;
-  @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+  border-radius: 18px;
+  overflow: hidden;
+  @include box-shadow(0 14px 40px rgba(17, 24, 39, 0.12));
 }
 
 .sidebar-wrapper {
   grid-column: span 3;
   order: $sidebar-order;
-  background: $theme-color;
+  background: linear-gradient(180deg, darken($theme-color, 6%) 0%, darken($theme-color, 16%) 100%);
   color: #fff;
 
   a {
@@ -54,28 +60,29 @@ p {
   }
 
   .profile-container {
-    padding: 36px 28px 28px;
-    background: rgba(0, 0, 0, 0.2);
+    padding: 42px 30px 30px;
+    background: rgba(0, 0, 0, 0.16);
     text-align: center;
     color: #fff;
   }
 
   .name {
-    font-size: 34px;
+    font-size: 35px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 12px;
-    line-height: 1.08;
+    line-height: 1.05;
+    letter-spacing: -0.6px;
     word-break: break-word;
   }
 
   .tagline {
-    color: rgba(256, 256, 256, 0.72);
+    color: rgba(255, 255, 255, 0.78);
     font-size: 17px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 1.4;
+    line-height: 1.45;
   }
 
   .profile {
@@ -83,24 +90,25 @@ p {
   }
 
   .avatar {
-    max-width: 108px;
+    max-width: 112px;
     margin-bottom: 18px;
-    border: 0px solid #fff;
+    border: 3px solid rgba(255, 255, 255, 0.2);
     border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   }
 
   .contact-list {
     .fas,
     .fab,
     .far {
-      margin-right: 8px;
+      margin-right: 10px;
       font-size: 18px;
       vertical-align: middle;
+      opacity: 0.9;
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 11px;
       line-height: 1.5;
 
       &:last-child {
@@ -116,22 +124,25 @@ p {
   }
 
   .container-block {
-    padding: 26px 28px;
+    padding: 28px 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .container-block-title {
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 800;
     margin-top: 0;
     margin-bottom: 16px;
-    letter-spacing: 0.4px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.95);
   }
 
   .degree {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 5px;
+    line-height: 1.45;
   }
 
   .education-container {
@@ -144,38 +155,27 @@ p {
     }
 
     .meta {
-      color: rgba(256, 256, 256, 0.7);
+      color: rgba(255, 255, 255, 0.72);
       font-weight: 500;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       margin-top: 0;
       line-height: 1.45;
     }
 
     .time {
-      color: rgba(256, 256, 256, 0.7);
+      color: rgba(255, 255, 255, 0.72);
       font-weight: 500;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
   .languages-container {
     .lang-desc {
-      color: rgba(256, 256, 256, 0.7);
+      color: rgba(255, 255, 255, 0.72);
     }
   }
 
-  .languages-list {
-    margin-bottom: 0;
-
-    li {
-      margin-bottom: 10px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
+  .languages-list,
   .interests-list {
     margin-bottom: 0;
 
@@ -193,28 +193,40 @@ p {
 .main-wrapper {
   grid-column: span 7;
   order: $resume-order;
-  background: #fff;
-  padding: 64px 58px;
+  background: #ffffff;
+  padding: 68px 62px;
 
   .section-title {
     text-transform: uppercase;
     font-size: 22px;
-    font-weight: 600;
-    color: darken($theme-color, 15%);
+    font-weight: 800;
+    color: darken($theme-color, 12%);
     position: relative;
     margin-top: 0;
     margin-bottom: 24px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.8px;
+    padding-bottom: 10px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 3px;
+      background: lighten($theme-color, 5%);
+      border-radius: 999px;
+      margin-top: 10px;
+    }
   }
 
   .section {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   .experiences-section,
   .educations-section {
     .item {
       margin-bottom: 34px;
+      padding-bottom: 6px;
     }
   }
 
@@ -230,10 +242,10 @@ p {
   .degree,
   .cert-title {
     color: $text-color;
-    font-size: 17px;
+    font-size: 18px;
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 600;
+    font-weight: 700;
     flex: 75%;
     line-height: 1.35;
   }
@@ -245,6 +257,7 @@ p {
     top: 0;
     color: $text-grey;
     flex: 25%;
+    font-weight: 500;
   }
 
   .company,
@@ -252,20 +265,21 @@ p {
   .cert-org {
     margin-bottom: 12px;
     color: $text-grey;
-    line-height: 1.45;
+    line-height: 1.5;
+    font-weight: 500;
   }
 
   .project-title {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 6px;
-    color: darken($theme-color, 15%);
+    color: darken($theme-color, 10%);
   }
 
   .projects-section {
     .intro {
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .item {
@@ -275,9 +289,9 @@ p {
 
   .publication-title {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: $text-color;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
   }
 
   .publication-authors {
@@ -288,7 +302,7 @@ p {
 
   .publications-section {
     .intro {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     .item {
@@ -307,21 +321,25 @@ p {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 12px;
+    font-weight: 600;
   }
 
   .level-bar {
     height: 12px;
-    background: $smoky-white;
+    background: #e9edf3;
+    border-radius: 999px;
+    overflow: hidden;
   }
 
   .level-bar-inner {
     height: 12px;
-    background: lighten($theme-color, 15%);
+    background: linear-gradient(90deg, lighten($theme-color, 8%) 0%, $theme-color 100%);
+    border-radius: 999px;
   }
 }
 
 .footer {
-  padding-top: 30px;
+  padding-top: 20px;
 
   .copyright {
     line-height: 1.6;
