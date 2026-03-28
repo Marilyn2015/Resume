@@ -17,7 +17,7 @@ sidebar:
   linkedin: marilynstephens
   xing:
   github: Marilyn2015
-  telegram: Phoenix20155
+  telegram:
   gitlab:
   bitbucket:
   twitter:
@@ -38,7 +38,7 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Cybersecurity and systems professional with experience supporting DoD and policy-regulated environments, specializing in data protection, secure system administration, and mission-critical operations. With CompTIA A+, Security+, and CySA+ certifications, I support the United States Air Force by safeguarding sensitive information, strengthening encryption practices, and maintaining the integrity of high-security networks. I have also expanded my technical skill set into full-stack development, teaching myself React, Firebase, and modern cloud architectures, including building a privacy-focused application using zero-knowledge principles that is now live in a recognized technology ecosystem. Active Security Clearance.
+    Cybersecurity and systems professional supporting DoD and policy-regulated environments, with hands-on experience in data protection, secure systems administration, and mission-critical operations. CompTIA A+, Security+, and CySA+ certified. I also expanded into full-stack development, teaching myself React, Firebase, cloud architecture, and privacy-focused identity systems, including a zero-knowledge project now live in a recognized technology ecosystem. Active Security Clearance.
 
 education:
   title: Education
@@ -64,31 +64,31 @@ experiences:
       time: Sep 2023–Present
       company: Bering Sea Environmental LLC
       details: |
-        Manage the secure handling, transfer, and validation of mission data across ICADS and PCDS environments, ensuring end-to-end data integrity, confidentiality, and compliance with DoD security standards. Perform system diagnostics, resolve data-flow issues, and maintain operational continuity for mission-critical systems. Support classified data workflows and enforce strict access-control and protection requirements.
+        Manage the secure handling, transfer, and validation of mission data across ICADS and PCDS environments, ensuring end-to-end data integrity, confidentiality, and compliance with DoD security standards. Perform system diagnostics, resolve data-flow issues, and maintain operational continuity for mission-critical systems.
 
-        Within LMOC operations, oversee radio communications and assigned frequencies to support pilots during live flight operations. Coordinate closely with aircrew to prepare, verify, and deliver mission data for debriefs, ensuring accuracy across reporting products used by pilots, instructors, and students.
+        Oversee radio communications and assigned frequencies within LMOC operations to support pilots during live flight activity. Coordinate mission data preparation, verification, and delivery for debriefs used by pilots, instructors, and students.
 
-        Contributed to the development and submission of the TEMPEST package and supported facility transition efforts involving emission-security requirements, protected distribution systems, and secure facility configuration. Perform monthly patching, system updates, and security hardening in alignment with DoD cybersecurity directives.
+        Contributed to the TEMPEST package, facility transition efforts, monthly patching, system updates, and security hardening in alignment with DoD cybersecurity directives.
 
-        Proficient with PCDS, ANGEL, ICADS, SolarWinds, and MSCT.
+        Tools: PCDS, ANGEL, ICADS, SolarWinds, MSCT.
 
     - role: Owner
       time: Aug 2013–Aug 2023
       company: Virginia Natural Cleaning Solutions
       details: |
-        Founded and scaled Virginia Natural Cleaning Solutions from the ground up with no formal business background, overseeing marketing, client acquisition, service delivery, financial management, vendor coordination, inventory control, quoting, and bookkeeping.
+        Founded and scaled Virginia Natural Cleaning Solutions from the ground up, overseeing marketing, client acquisition, service delivery, vendor coordination, quoting, inventory control, and bookkeeping.
 
-        Built the company into a certified SWaM vendor and secured multiple HUD contracts specializing in property inspections and compliance-focused services. Grew the business from a small customer base into a stable revenue-generating company with apartment cleaning contracts across Newport News within 18 months.
+        Built the company into a certified SWaM vendor and secured multiple HUD contracts specializing in inspections and compliance-focused services. Grew the business from a small customer base into a stable revenue-generating company with apartment cleaning contracts across Newport News within 18 months.
 
     - role: Lead Leasing Consultant
       time: Nov 2017–Feb 2022
       company: SL Nusbaum Realty Co.
       details: |
-        Coordinated and executed the full leasing process, including application management, lease signings, compliance documentation, move-in scheduling, lead response, follow-up, and property inspections.
+        Coordinated the full leasing process, including applications, lease signings, compliance documentation, move-in scheduling, lead response, follow-up, and property inspections.
 
-        Raised occupancy from 87% to 96% in two months, directly increasing revenue and stabilizing the community. This performance led to a promotion from Leasing Consultant to Lead Leasing Consultant.
+        Raised occupancy from 87% to 96% in two months, increasing revenue and stabilizing the community. This performance led to a promotion from Leasing Consultant to Lead Leasing Consultant.
 
-        Known for strong de-escalation, resident support, and solution-focused communication.
+        Known for de-escalation, resident support, and solution-focused communication.
 
     - role: Leasing Consultant
       time: Sep 2013–Aug 2016
@@ -128,7 +128,7 @@ certifications:
 projects:
   title: Projects
   intro: >
-    Personal and technical projects that reflect my interest in privacy-first systems, secure identity, and emerging technologies.
+    Personal and technical projects centered on privacy-first systems, secure identity, and emerging technologies.
   assignments:
     - title: Hash Humanity
       link: "https://hashhumanity.world"
