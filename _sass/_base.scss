@@ -30,14 +30,14 @@ a {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   background: $theme-color;
-  max-width: 1000px;
+  max-width: 1120px;
   margin: 0 auto;
   position: relative;
   @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
@@ -48,100 +48,128 @@ p {
   order: $sidebar-order;
   background: $theme-color;
   color: #fff;
+
   a {
     color: #fff;
   }
+
   .profile-container {
-    padding: 30px;
-    //background: darken($theme-color, 10%);
+    padding: 36px 28px 28px;
     background: rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #fff;
   }
+
   .name {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 900;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    line-height: 1.08;
+    word-break: break-word;
   }
+
   .tagline {
-    color: rgba(256, 256, 256, 0.6);
-    font-size: 16px;
+    color: rgba(256, 256, 256, 0.72);
+    font-size: 17px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 1.4;
   }
+
   .profile {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   .avatar {
-    //used for profile image
-    max-width: 100px;
-    margin-bottom: 15px;
+    max-width: 108px;
+    margin-bottom: 18px;
     border: 0px solid #fff;
     border-radius: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
+
   .contact-list {
     .fas,
     .fab,
     .far {
-      margin-right: 5px;
+      margin-right: 8px;
       font-size: 18px;
       vertical-align: middle;
     }
+
     li {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
+
+    a,
+    span {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
   }
+
   .container-block {
-    padding: 30px;
+    padding: 26px 28px;
   }
+
   .container-block-title {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    letter-spacing: 0.4px;
   }
+
   .degree {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 5px;
   }
+
   .education-container {
     .item {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
+
     .meta {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(256, 256, 256, 0.7);
       font-weight: 500;
       margin-bottom: 0px;
       margin-top: 0;
+      line-height: 1.45;
     }
+
     .time {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(256, 256, 256, 0.7);
       font-weight: 500;
       margin-bottom: 0px;
     }
   }
+
   .languages-container {
     .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(256, 256, 256, 0.7);
     }
   }
 
   .languages-list {
     margin-bottom: 0;
+
     li {
       margin-bottom: 10px;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -150,8 +178,11 @@ p {
 
   .interests-list {
     margin-bottom: 0;
+
     li {
       margin-bottom: 10px;
+      line-height: 1.5;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -163,43 +194,50 @@ p {
   grid-column: span 7;
   order: $resume-order;
   background: #fff;
-  padding: 60px;
+  padding: 64px 58px;
+
   .section-title {
     text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     color: darken($theme-color, 15%);
     position: relative;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
   }
+
   .section {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 
   .experiences-section,
   .educations-section {
     .item {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
     }
   }
+
   .upper-row,
   .second-upper-row {
     position: relative;
     overflow: hidden;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     display: flex;
   }
+
   .job-title,
   .degree,
-  .cert-title{
+  .cert-title {
     color: $text-color;
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 500;
+    font-weight: 600;
     flex: 75%;
+    line-height: 1.35;
   }
+
   .time,
   .cert-url {
     position: absolute;
@@ -208,26 +246,30 @@ p {
     color: $text-grey;
     flex: 25%;
   }
+
   .company,
   .university,
   .cert-org {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: $text-grey;
+    line-height: 1.45;
   }
 
   .project-title {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     color: darken($theme-color, 15%);
   }
+
   .projects-section {
     .intro {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
+
     .item {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
   }
 
@@ -237,15 +279,18 @@ p {
     color: $text-color;
     margin-bottom: 1px;
   }
+
   .publication-authors {
     font-style: italic;
     color: $text-grey;
     margin-bottom: 1px;
   }
+
   .publications-section {
     .intro {
       margin-bottom: 30px;
     }
+
     .item {
       margin-bottom: 15px;
     }
@@ -254,18 +299,21 @@ p {
 
 .skillset {
   .item {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     overflow: hidden;
   }
+
   .level-title {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 12px;
   }
+
   .level-bar {
     height: 12px;
     background: $smoky-white;
   }
+
   .level-bar-inner {
     height: 12px;
     background: lighten($theme-color, 15%);
@@ -274,6 +322,7 @@ p {
 
 .footer {
   padding-top: 30px;
+
   .copyright {
     line-height: 1.6;
     color: $text-color-secondary;
@@ -284,4 +333,3 @@ p {
     color: $heart;
   }
 }
-
