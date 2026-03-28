@@ -18,7 +18,7 @@ $sidebar-order: 2;
 /* ===== Custom layout overrides for your actual HTML ===== */
 
 body {
-  background: linear-gradient(180deg, #eef2f7 0%, #e8edf5 100%);
+  background: linear-gradient(180deg, #efefee 0%, #e4e5e3 100%);
 }
 
 .container {
@@ -26,22 +26,22 @@ body {
   flex-direction: row;
   max-width: 1180px;
   margin: 36px auto;
-  background: #ffffff;
-  border-radius: 18px;
+  background: #fcfcfb;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 14px 40px rgba(17, 24, 39, 0.12);
+  box-shadow: 0 16px 44px rgba(28, 28, 28, 0.12);
 }
 
 .sidebar {
   width: 320px;
   padding: 0;
-  background: linear-gradient(180deg, #3f516b 0%, #2f3f56 100%);
-  color: #ffffff;
+  background: linear-gradient(180deg, #5f635f 0%, #4c504d 45%, #424643 100%);
+  color: #f7f7f5;
   flex-shrink: 0;
 }
 
 .sidebar a {
-  color: #ffffff;
+  color: #f7f7f5;
   text-decoration: none;
 }
 
@@ -56,8 +56,8 @@ body {
   border-radius: 50%;
   display: block;
   margin: 42px auto 18px;
-  border: 3px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border: 3px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
 .sidebar h2 {
@@ -77,7 +77,7 @@ body {
   margin: 0 0 22px;
   font-size: 17px;
   line-height: 1.45;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .sidebar .contact {
@@ -86,7 +86,7 @@ body {
   padding-right: 30px;
   margin: 0 0 28px;
   padding-top: 22px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .sidebar .contact li {
@@ -105,7 +105,7 @@ body {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.96);
 }
 
 .sidebar ul:not(.contact) {
@@ -124,7 +124,7 @@ body {
 .content {
   flex: 1;
   padding: 74px 68px;
-  background: #ffffff;
+  background: #fcfcfb;
 }
 
 .content .section {
@@ -135,7 +135,7 @@ body {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 800;
-  color: #3f516b;
+  color: #4d524f;
   margin-top: 0;
   margin-bottom: 24px;
   letter-spacing: 0.8px;
@@ -147,13 +147,14 @@ body {
   display: block;
   width: 54px;
   height: 3px;
-  background: #5b7190;
+  background: #8f958f;
   border-radius: 999px;
   margin-top: 10px;
 }
 
 .content p {
   line-height: 1.72;
+  color: #4d5350;
 }
 
 .content .item {
@@ -165,6 +166,14 @@ body {
 .content .cert-title,
 .content h3 {
   font-weight: 700;
+  color: #3f4441;
+}
+
+.content .time,
+.content .company,
+.content .university,
+.content .cert-org {
+  color: #777d79;
 }
 
 @media (max-width: 991px) {
