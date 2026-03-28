@@ -17,7 +17,6 @@ sidebar:
   linkedin: marilynstephens
   xing:
   github: Marilyn2015
-  telegram:
   gitlab:
   bitbucket:
   twitter:
@@ -38,7 +37,7 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Cybersecurity and systems professional supporting DoD and policy-regulated environments, with hands-on experience in data protection, secure systems administration, and mission-critical operations. CompTIA A+, Security+, and CySA+ certified. I also expanded into full-stack development, teaching myself React, Firebase, cloud architecture, and privacy-focused identity systems, including a zero-knowledge project now live in a recognized technology ecosystem. Active Security Clearance.
+    Cybersecurity and systems professional supporting DoD and policy-regulated environments, with hands-on experience in data protection, secure systems administration, mission-critical operations, and compliance-driven workflows. CompTIA A+, Security+, and CySA+ certified. Currently supporting United States Air Force operations in a secure environment, with direct experience in mission data handling, system validation, radio support operations, and secure facility requirements. In addition to my formal systems role, I have expanded my technical skill set through self-directed learning in React, Firebase, cloud architecture, and privacy-focused identity systems, including work on a zero-knowledge project now live in a recognized technology ecosystem. Active Security Clearance.
 
 education:
   title: Education
@@ -64,39 +63,52 @@ experiences:
       time: Sep 2023–Present
       company: Bering Sea Environmental LLC
       details: |
-        Manage the secure handling, transfer, and validation of mission data across ICADS and PCDS environments, ensuring end-to-end data integrity, confidentiality, and compliance with DoD security standards. Perform system diagnostics, resolve data-flow issues, and maintain operational continuity for mission-critical systems.
+        Manage the secure handling, transfer, and validation of mission data across ICADS and PCDS environments, ensuring end-to-end data integrity, confidentiality, and compliance with DoD security standards. Perform system diagnostics, resolve data-flow issues, and maintain operational continuity for mission-critical systems that directly support Air Force operations.
 
-        Oversee radio communications and assigned frequencies within LMOC operations to support pilots during live flight activity. Coordinate mission data preparation, verification, and delivery for debriefs used by pilots, instructors, and students.
+        Oversee radio communications and assigned frequencies within LMOC operations to support pilots during live flight activity. Coordinate closely with aircrew to prepare, verify, and deliver mission data for debriefs, ensuring accuracy and consistency across reporting products used by pilots, instructors, and students.
 
-        Contributed to the TEMPEST package, facility transition efforts, monthly patching, system updates, and security hardening in alignment with DoD cybersecurity directives.
+        Contributed to TEMPEST package development and submission and supported facility transition efforts involving emission-security requirements, protected distribution systems, and secure facility configuration. Perform monthly patching, system updates, and security hardening in alignment with DoD cybersecurity directives to reduce risk and maintain system integrity.
 
-        Tools: PCDS, ANGEL, ICADS, SolarWinds, MSCT.
+        Tools and platforms include PCDS, ANGEL, ICADS, SolarWinds, and MSCT.
 
     - role: Owner
       time: Aug 2013–Aug 2023
       company: Virginia Natural Cleaning Solutions
       details: |
-        Founded and scaled Virginia Natural Cleaning Solutions from the ground up, overseeing marketing, client acquisition, service delivery, vendor coordination, quoting, inventory control, and bookkeeping.
+        Founded and scaled Virginia Natural Cleaning Solutions from the ground up with no formal business background, building the company through initiative, discipline, and a strong commitment to service quality. Oversaw marketing, client acquisition, service delivery, vendor coordination, quoting, inventory control, bookkeeping, and day-to-day operational management.
 
-        Built the company into a certified SWaM vendor and secured multiple HUD contracts specializing in inspections and compliance-focused services. Grew the business from a small customer base into a stable revenue-generating company with apartment cleaning contracts across Newport News within 18 months.
+        Built the company into a certified SWaM vendor and secured multiple HUD contracts specializing in inspections and compliance-focused services. Grew the business from a small customer base into a stable revenue-generating company with apartment cleaning contracts across Newport News within 18 months, demonstrating the ability to build trust, scale operations, and manage a business with consistency and professionalism.
 
     - role: Lead Leasing Consultant
       time: Nov 2017–Feb 2022
       company: SL Nusbaum Realty Co.
       details: |
-        Coordinated the full leasing process, including applications, lease signings, compliance documentation, move-in scheduling, lead response, follow-up, and property inspections.
+        Coordinated the full leasing process, including applications, lease signings, compliance documentation, move-in scheduling, lead response, follow-up, and property inspections. Worked in a high-volume environment requiring strong organization, attention to detail, and consistent communication with both prospective and current residents.
 
-        Raised occupancy from 87% to 96% in two months, increasing revenue and stabilizing the community. This performance led to a promotion from Leasing Consultant to Lead Leasing Consultant.
+        Raised occupancy from 87% to 96% within two months, increasing revenue and stabilizing the community. This performance led to a promotion from Leasing Consultant to Lead Leasing Consultant, reflecting strong sales ability, operational consistency, and effective resident relationship management.
 
-        Known for de-escalation, resident support, and solution-focused communication.
+        Known for de-escalation, resident support, and solution-focused communication, with the ability to resolve issues professionally and maintain positive client experiences.
 
     - role: Leasing Consultant
       time: Sep 2013–Aug 2016
       company: Seminole Trail Management LLC
       details: |
-        Oversaw lease preparation, application processing, compliance documentation, rental payment entry, collections, late fees, and eviction coordination in accordance with policy and state requirements.
+        Oversaw lease preparation, application processing, compliance documentation, rental payment entry, collections, late fees, and eviction coordination in accordance with policy and state requirements. Managed resident-facing responsibilities with professionalism, accuracy, and a strong service mindset.
 
-        Ranked as the #1 leasing agent for five consecutive months and independently operated the property during an ownership transition, maintaining leasing, financial, and resident-facing operations without disruption.
+        Ranked as the #1 leasing agent for five consecutive months and independently operated the property during an ownership transition, maintaining leasing, financial, and resident-facing operations without disruption. Demonstrated the ability to work independently, manage pressure, and keep operations running smoothly during periods of change.
+
+projects:
+  title: Projects
+  intro: >
+    Selected projects that reflect my work in secure identity, privacy-first platforms, web development, and digital branding.
+  assignments:
+    - title: Hash Humanity
+      link: "https://hashhumanity.world"
+      tagline: "Hash Humanity is a privacy-focused social platform I designed and developed around proof of personhood, secure identity, and human-centered online interaction. The project incorporates modern web technologies, identity verification concepts, and zero-knowledge principles to support a more authentic and trusted digital environment."
+
+    - title: I Shirt You Not
+      link: ""
+      tagline: "I Shirt You Not is a website design and branding project created around shirt and hoodie concepts, with emphasis on visual presentation, product-focused layout, and user-facing design. The project highlights my ability to translate creative ideas into polished digital experiences."
 
 certifications:
   title: Certifications
@@ -125,18 +137,10 @@ certifications:
       credentialurl: https://credly.com/users/marilynstephens/badges
       credentialname: Credly Profile
 
-projects:
-  title: Projects
-  intro: >
-    Personal and technical projects centered on privacy-first systems, secure identity, and emerging technologies.
-  assignments:
-    - title: Hash Humanity
-      link: "https://hashhumanity.world"
-      tagline: "Privacy-focused social platform built around proof of personhood, zero-knowledge concepts, and modern web technologies."
-
-    - title: Security Clearance
-      link: ""
-      tagline: "Active"
+additional-information:
+  title: Additional Information
+  info:
+    - item: Active Security Clearance
 
 skills:
   title: Skills &amp; Proficiency
@@ -156,8 +160,8 @@ skills:
     - name: Full-Stack Development
       level: 70%
 
-    - name: Sales & Client Relations
-      level: 96%
+    - name: Web Design & Branding
+      level: 78%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="mailto:marilyn_stephens@hotmail.com" target="_blank">Marilyn</a>
