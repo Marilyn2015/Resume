@@ -1,23 +1,632 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Marilyn Stephens — Cybersecurity & Mission-Critical Systems</title>
+<meta name="description" content="Computer Systems Analyst with active Secret clearance, CompTIA CySA+/Security+/A+, supporting mission-critical DoD operations. Builder of a live zero-knowledge identity platform." />
+<style>
+  /* ============================================================
+     DESIGN TOKENS
+     Aesthetic: vetted personnel dossier × SOC console.
+     Palette: near-black field, bone text, one signal accent.
+     ============================================================ */
+  :root {
+    --field:      #0b0e12;   /* base background */
+    --panel:      #11151b;   /* raised panel */
+    --panel-2:    #161b23;   /* nested */
+    --line:       #232a33;   /* hairline rules */
+    --line-soft:  #1a2027;
+    --bone:       #e8e9ea;   /* primary text */
+    --ash:        #9aa3ad;   /* secondary text */
+    --dim:        #5d6770;   /* tertiary / captions */
+    --signal:     #38e0c8;   /* verified / live accent — used sparingly */
+    --signal-dim: rgba(56,224,200,0.14);
+    --alert:      #e0b338;   /* clearance / credential gold */
+    --alert-dim:  rgba(224,179,56,0.12);
 
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --sans: "Space Grotesk", "Inter", -apple-system, system-ui, sans-serif;
 
-{% include career-profile.html %}
+    --maxw: 980px;
+  }
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
-{% include experiences.html %}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-{% include certifications.html %}
+  html { scroll-behavior: smooth; }
 
-{% include projects.html %}
+  body {
+    background: var(--field);
+    color: var(--bone);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-{% include oss-contributions.html %}
+  /* subtle scanline / grid texture in the field */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size: 46px 46px;
+    opacity: 0.35;
+    mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 75%);
+  }
 
-{% include publications.html %}
+  .wrap { position: relative; z-index: 1; max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
 
-{% include skills.html %}
+  a { color: inherit; text-decoration: none; }
 
+  /* mono utility label */
+  .kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+
+  /* ============================================================ NAV */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(11,14,18,0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--maxw); margin: 0 auto; padding: 0 22px;
+    height: 58px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand {
+    font-family: var(--mono); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.04em; display: flex; align-items: center; gap: 9px;
+  }
+  .brand .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--signal); box-shadow: 0 0 10px var(--signal);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  .nav-links { display: flex; gap: 26px; }
+  .nav-links a {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em;
+    color: var(--ash); transition: color 0.18s;
+  }
+  .nav-links a:hover { color: var(--signal); }
+  @media (max-width: 680px) { .nav-links { display: none; } }
+
+  /* ============================================================ HERO */
+  header { padding: 86px 0 64px; border-bottom: 1px solid var(--line); }
+
+  .clearance-tag {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--alert);
+    background: var(--alert-dim);
+    border: 1px solid rgba(224,179,56,0.35);
+    border-radius: 4px;
+    padding: 7px 13px;
+    margin-bottom: 26px;
+  }
+  .clearance-tag::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--alert); box-shadow: 0 0 8px var(--alert);
+  }
+
+  h1 {
+    font-size: clamp(40px, 8vw, 76px);
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    margin-bottom: 22px;
+  }
+  h1 .turn { color: var(--signal); }
+
+  .lede {
+    font-size: clamp(16px, 2.4vw, 20px);
+    color: var(--ash);
+    max-width: 660px;
+    margin-bottom: 32px;
+  }
+  .lede strong { color: var(--bone); font-weight: 600; }
+
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
+  .chip {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+    color: var(--ash);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 7px 12px;
+    background: var(--panel);
+  }
+  .chip.live { color: var(--signal); border-color: rgba(56,224,200,0.4); }
+  .chip.live::before {
+    content: "● "; font-size: 9px; vertical-align: middle;
+  }
+
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    font-family: var(--mono); font-size: 13px; font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 13px 22px; border-radius: 5px; cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+    display: inline-flex; align-items: center; gap: 9px;
+  }
+  .btn-primary {
+    background: var(--signal); color: #04201c; font-weight: 600;
+    border: 1px solid var(--signal);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(56,224,200,0.28); }
+  .btn-ghost {
+    background: transparent; color: var(--bone);
+    border: 1px solid var(--line);
+  }
+  .btn-ghost:hover { border-color: var(--signal); color: var(--signal); }
+
+  /* ============================================================ SECTION SCAFFOLD */
+  section { padding: 72px 0; border-bottom: 1px solid var(--line); }
+  .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 40px; }
+  .sec-num {
+    font-family: var(--mono); font-size: 12px; color: var(--signal);
+    letter-spacing: 0.1em;
+  }
+  .sec-title { font-size: clamp(22px, 4vw, 32px); font-weight: 600; letter-spacing: -0.02em; }
+
+  /* ============================================================ SUMMARY */
+  .summary-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
+  @media (max-width: 760px){ .summary-grid { grid-template-columns: 1fr; gap: 30px; } }
+  .summary-body p { color: var(--ash); font-size: 16.5px; margin-bottom: 18px; }
+  .summary-body strong { color: var(--bone); }
+  .summary-body .pull {
+    color: var(--bone); font-size: 18px; font-weight: 500;
+    border-left: 2px solid var(--signal); padding-left: 18px; margin: 24px 0;
+  }
+
+  .stat-stack { display: flex; flex-direction: column; gap: 14px; }
+  .stat {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 6px; padding: 18px 20px;
+  }
+  .stat .n { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; line-height: 1; }
+  .stat .n .unit { color: var(--signal); }
+  .stat .l { font-family: var(--mono); font-size: 11px; color: var(--dim);
+    letter-spacing: 0.08em; text-transform: uppercase; margin-top: 8px; }
+
+  /* ============================================================ CAREER LADDER */
+  .ladder { display: flex; flex-direction: column; gap: 0; }
+  .rung {
+    display: grid; grid-template-columns: 150px 1fr; gap: 28px;
+    padding: 26px 0; border-top: 1px solid var(--line);
+    position: relative;
+  }
+  .rung:first-child { border-top: none; }
+  @media (max-width: 680px){ .rung { grid-template-columns: 1fr; gap: 10px; } }
+
+  .rung-meta { font-family: var(--mono); }
+  .rung-dates { font-size: 12px; color: var(--signal); letter-spacing: 0.04em; }
+  .rung-org { font-size: 12px; color: var(--dim); margin-top: 6px; line-height: 1.5; }
+
+  .rung-role { font-size: 19px; font-weight: 600; margin-bottom: 4px; }
+  .rung-tag {
+    display: inline-block; font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--alert); background: var(--alert-dim);
+    border: 1px solid rgba(224,179,56,0.3); border-radius: 3px;
+    padding: 3px 8px; margin-bottom: 12px;
+  }
+  .rung-list { list-style: none; }
+  .rung-list li {
+    color: var(--ash); font-size: 15px; padding-left: 18px; position: relative;
+    margin-bottom: 7px;
+  }
+  .rung-list li::before {
+    content: ""; position: absolute; left: 0; top: 10px;
+    width: 6px; height: 6px; border: 1px solid var(--signal);
+    transform: rotate(45deg);
+  }
+  .rung-list li b { color: var(--bone); font-weight: 600; }
+
+  /* ============================================================ FEATURED PROJECT */
+  .project {
+    background: linear-gradient(160deg, var(--panel), var(--field));
+    border: 1px solid var(--line); border-radius: 10px;
+    padding: 34px; position: relative; overflow: hidden;
+  }
+  .project::before {
+    content: ""; position: absolute; top: 0; left: 34px; right: 34px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--signal), transparent);
+  }
+  .project-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; }
+  .project-name { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+  .project-thesis { color: var(--ash); font-size: 16.5px; max-width: 680px; margin-bottom: 28px; }
+  .project-thesis b { color: var(--bone); }
+
+  .feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 26px; }
+  @media (max-width: 680px){ .feat-grid { grid-template-columns: 1fr; } }
+  .feat {
+    background: var(--panel-2); border: 1px solid var(--line-soft);
+    border-radius: 7px; padding: 16px 18px;
+  }
+  .feat h4 {
+    font-family: var(--mono); font-size: 12px; color: var(--signal);
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 7px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .feat p { font-size: 14px; color: var(--ash); line-height: 1.55; }
+
+  .stack-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tech {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.03em;
+    color: var(--ash); background: var(--panel-2);
+    border: 1px solid var(--line); border-radius: 4px; padding: 5px 10px;
+  }
+
+  /* ============================================================ SKILLS / TOOLS */
+  .skill-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  @media (max-width: 760px){ .skill-cols { grid-template-columns: 1fr; gap: 26px; } }
+  .skill-col h4 {
+    font-family: var(--mono); font-size: 12px; color: var(--signal);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px;
+    padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  }
+  .skill-col ul { list-style: none; }
+  .skill-col li { font-size: 14.5px; color: var(--ash); padding: 5px 0; }
+
+  /* ============================================================ CREDS */
+  .cred-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 680px){ .cred-grid { grid-template-columns: 1fr; } }
+  .cred {
+    display: flex; align-items: center; gap: 16px;
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 7px; padding: 18px 20px;
+  }
+  .cred .badge {
+    font-family: var(--mono); font-weight: 600; font-size: 13px;
+    width: 54px; height: 54px; flex: 0 0 auto; border-radius: 7px;
+    display: grid; place-items: center; text-align: center; line-height: 1.1;
+    border: 1px solid;
+  }
+  .cred.clr .badge { color: var(--alert); border-color: rgba(224,179,56,0.4); background: var(--alert-dim); }
+  .cred.cert .badge { color: var(--signal); border-color: rgba(56,224,200,0.4); background: var(--signal-dim); }
+  .cred .ct { font-weight: 600; font-size: 15px; }
+  .cred .cs { font-family: var(--mono); font-size: 11px; color: var(--dim); letter-spacing: 0.05em; margin-top: 3px; }
+
+  /* ============================================================ CONTACT */
+  .contact-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .contact-card {
+    flex: 1 1 200px;
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 7px; padding: 18px 20px; transition: border-color 0.18s, transform 0.18s;
+  }
+  .contact-card:hover { border-color: var(--signal); transform: translateY(-2px); }
+  .contact-card .cl { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--dim); margin-bottom: 6px; }
+  .contact-card .cv { font-size: 15px; color: var(--bone); word-break: break-word; }
+
+  footer { padding: 40px 0 60px; }
+  .foot-line {
+    font-family: var(--mono); font-size: 12px; color: var(--dim);
+    text-align: center; letter-spacing: 0.04em;
+  }
+
+  /* reveal-on-scroll */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .brand .dot { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand"><span class="dot"></span>M.STEPHENS</div>
+    <div class="nav-links">
+      <a href="#summary">Summary</a>
+      <a href="#experience">Experience</a>
+      <a href="#project">Project</a>
+      <a href="#skills">Skills</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="clearance-tag">Active Secret Clearance · DoD</span>
+    <h1>Marilyn Stephens</h1>
+    <p class="lede">
+      Computer Systems Analyst securing <strong>mission-critical operations in classified DoD environments</strong> — and a hands-on builder who designed and shipped a <strong>live zero-knowledge identity platform</strong>. Three careers, each built from the ground up, <span style="color:var(--signal)">converging on cybersecurity</span>.
+    </p>
+    <div class="hero-meta">
+      <span class="chip">CompTIA CySA+</span>
+      <span class="chip">Security+</span>
+      <span class="chip">A+</span>
+      <span class="chip">TEMPEST / EMSEC</span>
+      <span class="chip live">Hash Humanity — Live</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#project">View security project →</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SUMMARY ============ -->
+<section id="summary">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">01</span><h2 class="sec-title">Summary</h2></div>
+    <div class="summary-grid">
+      <div class="summary-body reveal">
+        <p>I build trust into systems — first for residents and clients, now for classified data and digital identity.</p>
+        <p>Today I support <strong>mission-critical DoD operations</strong> with an active Secret clearance: managing classified data transfer and validation, hardening systems, and keeping secure platforms stable under pressure. I monitor and validate across <strong>ICADS, PCDS, ANGEL, and SolarWinds</strong>, and contributed to <strong>TEMPEST package development</strong> supporting emission-security standards.</p>
+        <p class="pull">I'm not afraid to start over — and I learn fast enough to make every restart pay off.</p>
+        <p>Before security, I advanced over two decades from leasing agent to lead consultant, and built my own SWaM-certified cleaning company from nothing. I put myself through school for three CompTIA certifications and moved into mission-critical services. In parallel, I architected and deployed a production zero-knowledge identity platform. The throughline: accountability, and the willingness to rebuild toward harder problems.</p>
+      </div>
+      <div class="stat-stack reveal">
+        <div class="stat"><div class="n">4<span class="unit">+ yrs</span></div><div class="l">Mission-critical / classified ops</div></div>
+        <div class="stat"><div class="n">3</div><div class="l">CompTIA certifications</div></div>
+        <div class="stat"><div class="n">87<span class="unit">→96%</span></div><div class="l">Occupancy lift in 2 months</div></div>
+        <div class="stat"><div class="n">10<span class="unit"> yrs</span></div><div class="l">Built & ran own business</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE LADDER ============ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">02</span><h2 class="sec-title">Career progression</h2></div>
+    <div class="ladder">
+
+      <div class="rung reveal">
+        <div class="rung-meta">
+          <div class="rung-dates">2022 — Present</div>
+          <div class="rung-org">TDX Combat Services<br>Newport News, VA</div>
+        </div>
+        <div>
+          <div class="rung-role">Computer Systems Analyst</div>
+          <span class="rung-tag">Active Secret · Mission-Critical</span>
+          <ul class="rung-list">
+            <li>Manage <b>secure transfer and validation of classified mission data</b>, ensuring integrity and DoD compliance.</li>
+            <li>Support mission systems for <b>pilot training and debrief workflows</b>; prepare and verify operational data outputs.</li>
+            <li>Perform <b>patching, system updates, and security hardening</b> to reduce vulnerabilities and maintain compliance.</li>
+            <li>Monitor system health and validate data accuracy with <b>ICADS, PCDS, ANGEL, SolarWinds</b>.</li>
+            <li>Contributed to <b>TEMPEST package development</b> and facility transition, supporting emission-security standards.</li>
+            <li>Coordinate radio communications and manage assigned frequencies during live flight operations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rung reveal">
+        <div class="rung-meta">
+          <div class="rung-dates">2013 — 2023</div>
+          <div class="rung-org">Virginia Natural Cleaning Solutions<br>Hampton, VA</div>
+        </div>
+        <div>
+          <div class="rung-role">Owner / Operator</div>
+          <span class="rung-tag">Founder · 10 Years</span>
+          <ul class="rung-list">
+            <li>Built and operated a service business <b>from the ground up while working full-time</b> — all operations, client acquisition, and financials independently.</li>
+            <li>Secured <b>SWaM certification and HUD contracts</b> for inspection and compliance-focused services.</li>
+            <li>Held <b>recurring contracts with apartment complexes</b> across Newport News; scaled to consistent revenue through retention and operational efficiency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rung reveal">
+        <div class="rung-meta">
+          <div class="rung-dates">2017 — 2022</div>
+          <div class="rung-org">SL Nusbaum Realty Co.<br>Newport News, VA</div>
+        </div>
+        <div>
+          <div class="rung-role">Lead Leasing Consultant</div>
+          <ul class="rung-list">
+            <li>Managed leasing operations, applications, <b>compliance documentation</b>, and resident onboarding.</li>
+            <li><b>Raised occupancy from 87% to 96% within two months</b> through targeted leasing strategies.</li>
+            <li>Ranked <b>#1 leasing agent for five consecutive months</b>; maintained operations through ownership transition.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rung reveal">
+        <div class="rung-meta">
+          <div class="rung-dates">2013 — 2016</div>
+          <div class="rung-org">Seminole Trail Management<br>Newport News, VA</div>
+        </div>
+        <div>
+          <div class="rung-role">Leasing Consultant</div>
+          <ul class="rung-list">
+            <li>Managed leasing processes, financial records, collections, and <b>compliance documentation</b> — the start of a 20-year record of operational accountability.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PROJECT ============ -->
+<section id="project">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">03</span><h2 class="sec-title">Security engineering · live project</h2></div>
+    <div class="project reveal">
+      <div class="project-top">
+        <div class="project-name">Hash Humanity</div>
+        <span class="chip live">hashhumanity.world</span>
+      </div>
+      <p class="project-thesis">
+        A <b>World ID–verified social identity platform</b> built on <b>zero-knowledge proofs</b> — every user is a verified unique human without revealing who they are. Designed, built, and operated end to end. Live in the World ecosystem on both browser and native World App.
+      </p>
+
+      <div class="feat-grid">
+        <div class="feat">
+          <h4>Zero-Knowledge Identity</h4>
+          <p>World ID proof of personhood via nullifiers — users prove they're a unique human without exposing identity. Unlinkable by design.</p>
+        </div>
+        <div class="feat">
+          <h4>Cryptographic Auth</h4>
+          <p>Secure SIWE (Sign-In with Ethereum) via Firebase Cloud Functions: signature verification, nonce management, and custom token issuance.</p>
+        </div>
+        <div class="feat">
+          <h4>Defense-in-Depth Rules</h4>
+          <p>Multi-path Realtime Database security rules with role-based access control, banned-user enforcement, and least-privilege writes.</p>
+        </div>
+        <div class="feat">
+          <h4>Identity Unification</h4>
+          <p>Automated, canonical identity resolution across multiple authentication providers — guarding against account fragmentation.</p>
+        </div>
+        <div class="feat">
+          <h4>Payments Integration</h4>
+          <p>WLD token payments via WalletConnect: transaction signing, environment detection, and end-to-end payment confirmation.</p>
+        </div>
+        <div class="feat">
+          <h4>Secure Comms Pipeline</h4>
+          <p>Cloud Functions email pipeline (Resend, custom domain) for in-app reporting and support — replacing brittle client-side handlers.</p>
+        </div>
+      </div>
+
+      <div class="stack-row">
+        <span class="tech">React</span>
+        <span class="tech">Firebase RTDB</span>
+        <span class="tech">Cloud Functions</span>
+        <span class="tech">World ID / MiniKit</span>
+        <span class="tech">Zero-Knowledge Proofs</span>
+        <span class="tech">SIWE</span>
+        <span class="tech">WalletConnect</span>
+        <span class="tech">PWA + Mini-App</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">04</span><h2 class="sec-title">Capabilities</h2></div>
+    <div class="skill-cols">
+      <div class="skill-col reveal">
+        <h4>Security & Compliance</h4>
+        <ul>
+          <li>Classified data handling & transfer</li>
+          <li>Patch management & system hardening</li>
+          <li>Data integrity & validation</li>
+          <li>DoD security & compliance standards</li>
+          <li>TEMPEST / emission security</li>
+          <li>Vulnerability reduction</li>
+          <li>Role-based access control</li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <h4>Systems & Tools</h4>
+        <ul>
+          <li>ICADS · PCDS · ANGEL</li>
+          <li>SolarWinds</li>
+          <li>System diagnostics & troubleshooting</li>
+          <li>Mission systems support</li>
+          <li>Vault environment operations</li>
+          <li>Radio comms & frequency management</li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <h4>Applied / Technical</h4>
+        <ul>
+          <li>Zero-knowledge proofs</li>
+          <li>Identity & authentication systems</li>
+          <li>Cloud security rules</li>
+          <li>JavaScript / React</li>
+          <li>Firebase &amp; Cloud Functions</li>
+          <li>Cryptographic signature flows</li>
+          <li>API integration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section id="credentials">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">05</span><h2 class="sec-title">Credentials</h2></div>
+    <div class="cred-grid reveal">
+      <div class="cred clr">
+        <div class="badge">SECRET</div>
+        <div><div class="ct">Active Secret Security Clearance</div><div class="cs">U.S. DEPARTMENT OF DEFENSE</div></div>
+      </div>
+      <div class="cred cert">
+        <div class="badge">CySA+</div>
+        <div><div class="ct">CompTIA CySA+</div><div class="cs">THREAT DETECTION · INCIDENT RESPONSE</div></div>
+      </div>
+      <div class="cred cert">
+        <div class="badge">SEC+</div>
+        <div><div class="ct">CompTIA Security+</div><div class="cs">CORE SECURITY · CRYPTOGRAPHY · RISK</div></div>
+      </div>
+      <div class="cred cert">
+        <div class="badge">A+</div>
+        <div><div class="ct">CompTIA A+</div><div class="cs">HARDWARE · OS · NETWORKING</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num">06</span><h2 class="sec-title">Contact</h2></div>
+    <p class="lede reveal" style="margin-bottom:24px;">Open to cybersecurity and SOC analyst roles. Active clearance, ready to contribute.</p>
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto:marilyn_stephens@hotmail.com">
+        <div class="cl">Email</div><div class="cv">marilyn_stephens@hotmail.com</div>
+      </a>
+      <a class="contact-card" href="tel:7572180565">
+        <div class="cl">Phone</div><div class="cv">757-218-0565</div>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/marilynstephens" target="_blank" rel="noopener">
+        <div class="cl">LinkedIn</div><div class="cv">/in/marilynstephens</div>
+      </a>
+      <a class="contact-card" href="https://github.com/Marilyn2015" target="_blank" rel="noopener">
+        <div class="cl">GitHub</div><div class="cv">github.com/Marilyn2015</div>
+      </a>
+      <a class="contact-card" href="https://hashhumanity.world" target="_blank" rel="noopener">
+        <div class="cl">Live Project</div><div class="cv">hashhumanity.world</div>
+      </a>
+      <div class="contact-card">
+        <div class="cl">Location</div><div class="cv">Hampton, Virginia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="foot-line">Three careers. Each built from nothing. Each a deliberate move toward harder problems.</p>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
