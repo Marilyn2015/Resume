@@ -1,11 +1,131 @@
+
+Claude finished the response
+I'll add that as your trajectory line. Let me update the hero sub to include it honestly.
+
+
+Edited 2 files
+Edited 2 files
+Let me also update the meta description and OG tags to reflect this trajectory, then do a final verification.
+
+
+Ran a command
+Ran a command
+All three additions are in, the file parses clean, and the fabrication check is all zeros. Here's your updated page:
+
+
+Presented 2 files
+Presented 2 files
+All three stand-out additions are in, and your design is untouched:
+
+Credly cert verification — your CySA+, Security+, and A+ cards are now clickable, each with a small "Verify ↗" tag, linking to your Credly profile so a hiring manager can confirm they're real and current. This is the highest-value add for a security role.
+
+Share-preview tags — Open Graph and Twitter card meta are in the <head>, so when you paste your resume link into LinkedIn, an email, or a hiring channel, it shows a clean preview (title, description, your headshot) instead of a bare URL.
+
+Trajectory line — your hero now reads "Advancing toward CompTIA SecurityX and AI security" — concrete and honest, showing where you're headed without inventing a cert you haven't committed to.
+
+One small note on the share-preview image: the OG tags point to https://marilyn2015.github.io/Resume/headshot.png. That works once the page is live at that URL and headshot.png is in the repo (it already is). If the preview image ever looks off, it's usually because social platforms cache previews — LinkedIn has a "Post Inspector" tool that force-refreshes it.
+
+To deploy: this index.html replaces the one in your Marilyn2015/Resume repo on master, and make sure Marilyn_Stephens_Resume.pdf is in the repo root for the download button. Your headshot.png is already there.
+
+That's a genuinely strong resume page now — honest content, verifiable credentials, a real project with security depth, and a clear direction. When you push it live, give it a look on both desktop and your phone and tell me if anything needs nudging.
+
+
+Index
+Code · HTML 
+
+Marilyn stephens resume
+Document · PDF 
+what about those other suggestions
+
+Good — let me circle back to the ones we didn't do. From my earlier list, here's what's left, honestly ranked by whether it's worth your time:
+
+Worth doing (low effort, real polish):
+
+A favicon — right now your browser tab shows a blank/default icon. A small "MS" monogram or a tiny gold mark makes the tab look intentional, and it shows up in bookmarks. Two-minute add.
+
+A "back to top" button — a small floating button that appears once you scroll down, since your page is long. Nice quality-of-life touch on mobile especially.
+
+ATS-friendly PDF check — this one actually matters for you specifically. Many DoD contractors run resumes through applicant tracking systems that parse text. Your Marilyn_Stephens_Resume.pdf (converted from Word) should parse fine since it's real text, not an image — but it's worth me verifying the text extracts cleanly so a machine can read it. This is substance, not polish.
+
+Security-specific depth on Hash Humanity — you already describe the ZK/SIWE/access-control work well. I could add one "threat model" callout (a specific attack class you designed against), since for a security role how you think about threats is what they're buying. Only worth it if you can tell me a real design decision you made.
+
+Maybe:
+
+A scroll progress bar at the top — subtle, but honestly your threads animation is already your signature moment, and adding more motion risks diluting it. I'd lean skip.
+
+I'd skip entirely (mentioned before): blog, testimonials, skills-percentage bars.
+
+My honest pick of what's left: favicon + back-to-top + verify the PDF is ATS-readable. Those three are quick and each adds real value. The Hash Humanity threat-model callout is great if you give me a true detail to work from.
+
+Which do you want?
+
+Which of the quick wins should I add?
+All three quick ones
+All three. Let me start by verifying the PDF is ATS-readable (the substance one), then add the favicon and back-to-top button.
+
+
+Ran a command
+Ran a command
+ATS result: your PDF passes. The text extracts perfectly cleanly — an applicant tracking system will read every word, including your name, contact info, all four jobs, and the key terms. One small note: "CySA+" shows as 0 only because your resume writes it as "CYSA+" (all caps) — the cert is the same, but ATS keyword matches can be picky. Worth knowing, though most ATS normalize case. Your PDF is machine-readable and good to go.
+
+Now the favicon and back-to-top button. First the favicon — an "MS" monogram in your gold, embedded as an SVG so there's no extra file to host:
+
+
+Add an inline SVG favicon (MS monogram in gold)
+Add an inline SVG favicon (MS monogram in gold)
+Now the back-to-top button. I'll add its CSS with the other styles, the button element before </body>, and the scroll logic in the existing script. First the CSS:
+
+
+Add back-to-top button styles matching the gold theme
+Add back-to-top button styles matching the gold theme
+Now the button element and its script, before </body>:
+
+
+Edited a file, ran a command
+Edited a file, ran a command
+All in, parses clean, single </body>. Here's the finished page:
+
+
+Presented 2 files
+Presented 2 files
+All three quick wins are done:
+
+PDF is ATS-readable ✅ — I tested it: the text extracts perfectly, so applicant tracking systems (which DoD contractors use heavily) will parse every word — your name, all four jobs, certs, and key terms like TEMPEST and Security Clearance. One tiny thing to know: your resume writes the cert as "CYSA+" (all caps) rather than "CySA+" — same cert, but if you ever edit the Word file, matching CompTIA's official "CySA+" casing is marginally safer for keyword matching. Not urgent; most systems normalize it.
+
+Favicon ✅ — an "MS" monogram in your gold, on a dark rounded tile, now shows in the browser tab and bookmarks. It's embedded directly in the HTML (as an SVG), so there's no extra file to upload — it just works.
+
+Back-to-top button ✅ — a small gold button appears in the bottom-right once you scroll down past the hero, and smoothly returns to the top when tapped. Sized down for mobile, and it respects reduced-motion settings.
+
+Your page is in really solid shape now: honest content, verifiable Credly certs, share-preview tags, a clear trajectory line, an ATS-friendly PDF, and these finishing touches — all without disturbing your threads animation or portrait.
+
+To deploy, same as before: this index.html replaces the one in your Marilyn2015/Resume repo on master, with Marilyn_Stephens_Resume.pdf in the repo root and headshot.png already there.
+
+I held off on the Hash Humanity threat-model callout — that one needs a real security design decision from you to write truthfully, and I won't invent one. If you want to add it, tell me one specific threat or attack you designed against in Hash Humanity (for example, how you prevented replay attacks in the SIWE flow, or a specific access-control rule you built), and I'll write it up accurately.
+
+
+Index
+Code · HTML 
+
+Marilyn stephens resume
+Document · PDF 
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c0e12'/%3E%3Crect x='0.5' y='0.5' width='31' height='31' rx='5.5' fill='none' stroke='%23d9b66b' stroke-opacity='0.5'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='15' font-weight='600' fill='%23d9b66b' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E" />
 <title>Marilyn Stephens — Cybersecurity & Mission-Critical Systems</title>
 <meta name="description" content="Computer Systems Analyst with active Secret clearance, CompTIA CySA+/Security+/A+, supporting mission-critical DoD operations. Builder of a live zero-knowledge identity platform." />
-
+ 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Marilyn Stephens — Cybersecurity & Mission-Critical Systems" />
 <meta property="og:description" content="Computer Systems Analyst, active Secret clearance, CompTIA CySA+/Security+/A+. Builder of a live zero-knowledge identity platform." />
@@ -176,6 +296,16 @@
     html{scroll-behavior:auto}
   }
   :focus-visible{outline:2px solid var(--jade);outline-offset:3px}
+  .to-top{position:fixed;right:24px;bottom:24px;z-index:70;width:46px;height:46px;border-radius:3px;
+    background:rgba(12,14,18,0.8);backdrop-filter:blur(10px);border:1px solid rgba(217,182,107,0.35);
+    color:var(--gold);cursor:pointer;display:grid;place-items:center;
+    opacity:0;visibility:hidden;transform:translateY(10px);
+    transition:opacity .3s ease,transform .3s ease,visibility .3s ease,border-color .2s ease,background .2s ease;}
+  .to-top.show{opacity:1;visibility:visible;transform:none;}
+  .to-top:hover{border-color:var(--gold);background:var(--ink-2);}
+  .to-top svg{width:18px;height:18px;}
+  @media(max-width:600px){.to-top{right:16px;bottom:16px;width:42px;height:42px;}}
+  @media(prefers-reduced-motion:reduce){.to-top{transition:opacity .2s ease,visibility .2s ease;transform:none;}}
 </style>
 </head>
 <body>
@@ -186,7 +316,7 @@
     <a href="#skills">Skills</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
   </div>
 </div></nav>
-
+ 
 <header>
   <canvas id="threads"></canvas>
   <div class="wrap hero-grid">
@@ -215,8 +345,8 @@
     </div>
   </div>
 </header>
-
-
+ 
+ 
 <section id="summary"><div class="wrap">
   <div class="sec-head reveal"><span class="eyebrow">01 — Profile</span><h2 class="sec-title">A record of <em>rebuilding</em>.</h2></div>
   <div class="summary-grid">
@@ -234,7 +364,7 @@
     </div>
   </div>
 </div></section>
-
+ 
 <section id="experience"><div class="wrap">
   <div class="sec-head reveal"><span class="eyebrow">02 — Trajectory</span><h2 class="sec-title">Career <em>progression</em>.</h2></div>
   <div class="ladder">
@@ -271,7 +401,7 @@
         </ul></div></div>
   </div>
 </div></section>
-
+ 
 <section id="project"><div class="wrap">
   <div class="sec-head reveal"><span class="eyebrow">03 — Built &amp; shipped</span><h2 class="sec-title">Security engineering, <em>live</em>.</h2></div>
   <div class="project reveal">
@@ -292,7 +422,7 @@
     </div>
   </div>
 </div></section>
-
+ 
 <section id="skills"><div class="wrap">
   <div class="sec-head reveal"><span class="eyebrow">04 — Capabilities</span><h2 class="sec-title">What I bring.</h2></div>
   <div class="skill-cols">
@@ -307,7 +437,7 @@
       <li>JavaScript / React</li><li>Firebase &amp; Cloud Functions</li><li>Cryptographic signature flows</li></ul></div>
   </div>
 </div></section>
-
+ 
 <section id="credentials"><div class="wrap">
   <div class="sec-head reveal"><span class="eyebrow">05 — Verified</span><h2 class="sec-title">Credentials.</h2></div>
   <div class="cred-grid reveal">
@@ -317,7 +447,7 @@
     <a class="cred cert" href="https://www.credly.com/users/marilynstephens" target="_blank" rel="noopener"><div class="badge">A+</div><div><div class="ct">CompTIA A+ <span class="verify">Verify ↗</span></div><div class="cs">HARDWARE · OS · NETWORKING</div></div></a>
   </div>
 </div></section>
-
+ 
 <section id="contact"><div class="wrap">
   <div class="sec-head reveal"><span class="eyebrow">06 — Contact</span><h2 class="sec-title">Open to <em>cybersecurity</em> roles.</h2></div>
   <div class="contact-grid reveal">
@@ -329,12 +459,12 @@
     <div class="contact-card"><div class="cl">Location</div><div class="cv">Hampton, Virginia</div></div>
   </div>
 </div></section>
-
+ 
 <footer><div class="wrap">
   <p class="foot-line">Three careers. Each built from nothing. Each a deliberate move toward harder problems.</p>
   <p class="foot-sub">MARILYN STEPHENS · HAMPTON, VA</p>
 </div></footer>
-
+ 
 <script>
   (function(){
     const el=document.getElementById('nm');const text="Marilyn Stephens";
@@ -377,5 +507,20 @@
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<button class="to-top" id="toTop" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+ 
+<script>
+  (function(){
+    var btn=document.getElementById('toTop');
+    if(!btn)return;
+    var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function onScroll(){ btn.classList.toggle('show', window.scrollY>600); }
+    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+    btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:reduce?'auto':'smooth'}); });
+  })();
+</script>
 </body>
 </html>
+ 
