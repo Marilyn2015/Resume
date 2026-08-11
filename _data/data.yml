@@ -115,7 +115,7 @@ certifications:
   list:
     - name: CompTIA Cybersecurity Analyst (CySA+)
       start: 2024
-      end: Present
+      end: 2027
       organization: CompTIA
       credentialid: CySA+
       credentialurl: https://credly.com/users/marilynstephens/badges
@@ -123,7 +123,7 @@ certifications:
 
     - name: CompTIA Security+
       start: 2024
-      end: Present
+      end: 2027
       organization: CompTIA
       credentialid: Security+
       credentialurl: https://credly.com/users/marilynstephens/badges
@@ -131,7 +131,7 @@ certifications:
 
     - name: CompTIA A+
       start: 2024
-      end: Present
+      end: 2027
       organization: CompTIA
       credentialid: A+
       credentialurl: https://credly.com/users/marilynstephens/badges
