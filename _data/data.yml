@@ -23,7 +23,10 @@ sidebar:
   stack-overflow:
   codewars:
   goodreads:
-  pdf: https://1drv.ms/w/c/67a9c8173eaa3099/IQBUKRbp-5r1RYoXNiUrhYG-AWYb0NZzLLcNRWMp2TG9hd0?e=OoDycn
+  # Resume download button — hosted in the repo. Because the repo is named
+  # "Resume", the baseurl is /Resume, so this path resolves to
+  # https://marilyn2015.github.io/Resume/resume.pdf and opens in the browser.
+  pdf: /Resume/resume.pdf
 
   interests:
     title: Interests
