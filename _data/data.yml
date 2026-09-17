@@ -98,12 +98,13 @@ I support mission systems used during live flight operations and post-flight deb
 projects:
 title: Projects
 intro: >
-Selected technical work focused on secure identity, privacy, cybersecurity, and full-stack application development.
+Selected projects reflecting my work in secure identity, privacy-focused systems, cybersecurity, and full-stack application development.
 
 assignments:
 - title: HumanKey / Hash Humanity
 link: "https://hashhumanity.world"
-tagline: "I designed and built HumanKey, the proof-of-person technology behind Hash Humanity. HumanKey uses AWS biometric technology for enrollment and liveness verification, along with duplicate-person detection, passkeys/WebAuthn, and zero-knowledge technology to support one human per account while limiting exposure of personal identity. I developed the supporting architecture and backend using Python and FastAPI and handle privacy and security design, testing, troubleshooting, integration, and deployment. HumanKey is integrated into Hash Humanity, a React and Firebase social platform with real-time data, messaging, notifications, media sharing, multilingual support, cloud functions, and PWA functionality."
+tagline: >
+I designed and built HumanKey, the proof-of-person technology behind Hash Humanity. HumanKey uses AWS biometric technology for enrollment and liveness verification, along with duplicate-person detection, passkeys/WebAuthn, and zero-knowledge technology to support one human per account while limiting exposure of personal identity. I developed the supporting architecture and backend using Python and FastAPI and handle privacy and security design, testing, troubleshooting, integration, and deployment. HumanKey is integrated into Hash Humanity, a React and Firebase social platform with real-time data, messaging, notifications, media sharing, multilingual support, cloud functions, and PWA functionality.
 
 certifications:
 title: Certifications & Clearance
