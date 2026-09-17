@@ -1,170 +1,168 @@
 sidebar:
-  position: right
-  about: True
-  education: True
+position: right
+about: True
+education: True
 
-  # Profile information
-  name: Marilyn Stephens
-  tagline: Computer Systems Analyst
-  avatar: profile.jpg  # place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+Profile information
 
-  # Sidebar links
-  email: marilyn_stephens@hotmail.com
-  phone: 757-218-0565
-  timezone: America/New_York
-  citizenship: USA
-  website: hashhumanity.world
-  linkedin: marilynstephens
-  xing:
-  github: Marilyn2015
-  gitlab:
-  bitbucket:
-  twitter:
-  stack-overflow:
-  codewars:
-  goodreads:
-  # Resume download button — hosted in the repo. Because the repo is named
-  # "Resume", the baseurl is /Resume, so this path resolves to
-  # https://marilyn2015.github.io/Resume/resume.pdf and opens in the browser.
-  pdf: /Resume/resume.pdf
+name: Marilyn Stephens
+tagline: Computer System Analyst | Cybersecurity Professional
+avatar: profile.jpg
 
-  interests:
-    title: Interests
-    info:
-      - item: Physics & Documentaries
-        link: https://phys.org
+Sidebar links
 
-      - item: AI & Large Language Models
-        link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
+email: marilyn_stephens@hotmail.com
+phone: 757-218-0565
+timezone: America/New_York
+citizenship: USA
+website: hashhumanity.world
+linkedin: marilynstephens
+xing:
+github: Marilyn2015
+gitlab:
+bitbucket:
+twitter:
+stack-overflow:
+codewars:
+goodreads:
+pdf: /Resume/resume.pdf
+
+interests:
+title: Interests
+info:
+- item: Physics & Documentaries
+link: https://phys.org
+
+  - item: AI & Large Language Models
+    link: https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai
 
 career-profile:
-  title: Career Profile
-  summary: |
-    Cybersecurity and systems professional supporting DoD and policy-regulated environments, with hands-on experience in data protection, secure systems administration, mission-critical operations, and compliance-driven workflows. CompTIA A+, Security+, and CySA+ certified. Currently supporting United States Air Force operations in a secure environment, with direct experience in mission data handling, system validation, radio support operations, and secure facility requirements. In addition to my formal systems role, I have expanded my technical skill set through self-directed learning in React, Firebase, cloud architecture, privacy-focused identity systems, and hands-on use of artificial intelligence tools. My project work includes a zero-knowledge platform now live in a recognized technology ecosystem, along with user-facing web and design projects. Active Security Clearance.
+title: Professional Summary
+summary: |
+I’m a Computer System Analyst and cybersecurity professional currently supporting United States Air Force operations in a DoD environment. My work includes mission systems, secure data processing, system administration, communications, cybersecurity, and troubleshooting in classified environments. My background also includes Navy technical support and virtualization, giving me experience across both end-user and mission-focused systems.
+
+I hold CompTIA CySA+, Security+, and A+ certifications and an active security clearance. I’ve built my career by learning hands-on, taking on increasingly technical work, and solving problems in environments where security, accuracy, and reliability matter.
 
 education:
-  title: Education
-  info:
-    - degree: Bethel High School
-      university: Hampton
-      time: 1997–2001
-      details: |
-        - Pegasus Program
-        - Computer Labs, Sports
+title: Education
+info:
+- degree: Bethel High School
+university: Hampton, VA
+time: 1997–2001
+details: |
+- Pegasus Program
+- Computer Labs, Sports
 
-    - degree: Computer Science / IT (Non-Degree)
-      university: Virginia Peninsula Community College
-      time: 2021–2024
-      details: |
-        - Studied Computer Science
-        - Focused on certifications instead of degree
+- degree: Computer Science / IT (Non-Degree)
+  university: Virginia Peninsula Community College
+  time: 2021–2024
+  details: |
+    - Studied Computer Science
+    - Focused on certifications instead of degree
 
 experiences:
-  title: Experience
-  info:
-    - role: Computer Systems Analyst
-      time: Sep 2023–Present
-      company: Bering Sea Environmental LLC
-      details: |
-        Manage the secure handling, transfer, and validation of mission data across ICADS and PCDS environments, ensuring end-to-end data integrity, confidentiality, and compliance with DoD security standards. Perform system diagnostics, resolve data-flow issues, and maintain operational continuity for mission-critical systems that directly support Air Force operations.
+title: Experience
+info:
+- role: Computer System Analyst
+time: Sep 2023–Feb 2024; Mar 2024–Present
+company: TDX Combat Training Systems | Newport News, VA
+details: |
+I support mission systems used during live flight operations and post-flight debriefing, securely processing and transferring mission data using SIS and PCDS to create a real-time view of the flight for debriefing. I support LMOC operations and radio communications and work in SAPF environments supporting classified systems and data.
 
-        Oversee radio communications and assigned frequencies within LMOC operations to support pilots during live flight activity. Coordinate closely with aircrew to prepare, verify, and deliver mission data for debriefs, ensuring accuracy and consistency across reporting products used by pilots, instructors, and students.
+    My work includes monthly cryptographic key updates with basic hands-on experience in Link 16 key loading, system patching, updates, troubleshooting, and security hardening. I contributed to our TEMPEST package and facility transition and have basic hands-on experience with VMware and Horizon. I regularly work with PCDS, ANGEL, ICADS, SolarWinds, and MSCT.
 
-        Contributed to TEMPEST package development and submission and supported facility transition efforts involving emission-security requirements, protected distribution systems, and secure facility configuration. Perform monthly patching, system updates, and security hardening in alignment with DoD cybersecurity directives to reduce risk and maintain system integrity.
+- role: Virtualization & Storage Technician
+  time: Feb 2024–Mar 2024
+  company: Fusion Mastech
+  details: |
+    I monitored virtual machines supporting multiple military installations, watched for system errors, troubleshot basic VM issues, performed controlled shutdowns when needed, and submitted tickets for problems requiring additional support. I gained hands-on familiarity with VMware and VMware ESXi.
 
-        Tools and platforms include PCDS, ANGEL, ICADS, SolarWinds, and MSCT.
+- role: Technical Support
+  time: Feb 2022
+  company: SAIC
+  details: |
+    I provided technical support for Navy users, troubleshooting CAC certificate and authentication issues, Microsoft Teams, Microsoft Exchange, and Flank Speed email. I used MEMC and remote access to log into user systems, troubleshoot problems, and resolve issues.
 
-    - role: Owner
-      time: Aug 2013–Aug 2023
-      company: Virginia Natural Cleaning Solutions
-      details: |
-        Founded and scaled Virginia Natural Cleaning Solutions from the ground up with no formal business background, building the company through initiative, discipline, and a strong commitment to service quality. Oversaw marketing, client acquisition, service delivery, vendor coordination, quoting, inventory control, bookkeeping, and day-to-day operational management.
+- role: Owner
+  time: Aug 2013–Aug 2023
+  company: Virginia Natural Cleaning Solutions | Hampton, VA
+  details: |
+    I built Virginia Natural Cleaning Solutions from the ground up and managed the day-to-day business, including customers, marketing, finances, vendors, inventory, and bookkeeping. The company became a certified SWaM vendor, secured multiple HUD contracts, and grew from one or two clients into an established business within 18 months.
 
-        Built the company into a certified SWaM vendor and secured multiple HUD contracts specializing in inspections and compliance-focused services. Grew the business from a small customer base into a stable revenue-generating company with apartment cleaning contracts across Newport News within 18 months, demonstrating the ability to build trust, scale operations, and manage a business with consistency and professionalism.
-
-    - role: Lead Leasing Consultant
-      time: Nov 2017–Feb 2022
-      company: SL Nusbaum Realty Co.
-      details: |
-        Coordinated the full leasing process, including applications, lease signings, compliance documentation, move-in scheduling, lead response, follow-up, and property inspections. Worked in a high-volume environment requiring strong organization, attention to detail, and consistent communication with both prospective and current residents.
-
-        Raised occupancy from 87% to 96% within two months, increasing revenue and stabilizing the community. This performance led to a promotion from Leasing Consultant to Lead Leasing Consultant, reflecting strong sales ability, operational consistency, and effective resident relationship management.
-
-        Known for de-escalation, resident support, and solution-focused communication, with the ability to resolve issues professionally and maintain positive client experiences.
-
-    - role: Leasing Consultant
-      time: Sep 2013–Aug 2016
-      company: Seminole Trail Management LLC
-      details: |
-        Oversaw lease preparation, application processing, compliance documentation, rental payment entry, collections, late fees, and eviction coordination in accordance with policy and state requirements. Managed resident-facing responsibilities with professionalism, accuracy, and a strong service mindset.
-
-        Ranked as the #1 leasing agent for five consecutive months and independently operated the property during an ownership transition, maintaining leasing, financial, and resident-facing operations without disruption. Demonstrated the ability to work independently, manage pressure, and keep operations running smoothly during periods of change.
+- role: Lead Leasing Consultant
+  time: Nov 2017–Feb 2022
+  company: SL Nusbaum Realty Co. | Newport News, VA
+  details: |
+    I managed leasing, applications, compliance, inspections, resident issues, and lead follow-up. I increased occupancy from 87% to 96% in two months and was promoted to Lead Leasing Consultant.
 
 projects:
-  title: Projects
-  intro: >
-    Selected projects that reflect my work in secure identity, privacy-first platforms, web development, and digital branding.
-  assignments:
-    - title: Hash Humanity
-      link: "https://hashhumanity.world"
-      tagline: "Hash Humanity is a privacy-focused social platform I designed and developed around proof of personhood, secure identity, and human-centered online interaction. The project incorporates modern web technologies, identity verification concepts, and zero-knowledge principles to support a more authentic and trusted digital environment."
+title: Projects
+intro: >
+Selected technical work focused on secure identity, privacy, cybersecurity, and full-stack application development.
 
-    - title: I Shirt You Not
-      link: ""
-      tagline: "I Shirt You Not is a website design and branding project created around shirt and hoodie concepts, with emphasis on visual presentation, product-focused layout, and user-facing design. The project highlights my ability to translate creative ideas into polished digital experiences."
+assignments:
+- title: HumanKey / Hash Humanity
+link: "https://hashhumanity.world"
+tagline: "I designed and built HumanKey, the proof-of-person technology behind Hash Humanity. HumanKey uses AWS biometric technology for enrollment and liveness verification, along with duplicate-person detection, passkeys/WebAuthn, and zero-knowledge technology to support one human per account while limiting exposure of personal identity. I developed the supporting architecture and backend using Python and FastAPI and handle privacy and security design, testing, troubleshooting, integration, and deployment. HumanKey is integrated into Hash Humanity, a React and Firebase social platform with real-time data, messaging, notifications, media sharing, multilingual support, cloud functions, and PWA functionality."
 
 certifications:
-  title: Certifications
-  list:
-    - name: CompTIA Cybersecurity Analyst (CySA+)
-      start: 2024
-      end: 2027
-      organization: CompTIA
-      credentialid: CySA+
-      credentialurl: https://credly.com/users/marilynstephens/badges
-      credentialname: Credly Profile
+title: Certifications & Clearance
+list:
+- name: CompTIA Cybersecurity Analyst (CySA+)
+start: 2024
+end: 2027
+organization: CompTIA
+credentialid: CySA+
+credentialurl: https://credly.com/users/marilynstephens/badges
+credentialname: Credly Profile
 
-    - name: CompTIA Security+
-      start: 2024
-      end: 2027
-      organization: CompTIA
-      credentialid: Security+
-      credentialurl: https://credly.com/users/marilynstephens/badges
-      credentialname: Credly Profile
+- name: CompTIA Security+
+  start: 2024
+  end: 2027
+  organization: CompTIA
+  credentialid: Security+
+  credentialurl: https://credly.com/users/marilynstephens/badges
+  credentialname: Credly Profile
 
-    - name: CompTIA A+
-      start: 2024
-      end: 2027
-      organization: CompTIA
-      credentialid: A+
-      credentialurl: https://credly.com/users/marilynstephens/badges
-      credentialname: Credly Profile
+- name: CompTIA A+
+  start: 2024
+  end: 2027
+  organization: CompTIA
+  credentialid: A+
+  credentialurl: https://credly.com/users/marilynstephens/badges
+  credentialname: Credly Profile
 
 additional-information:
-  title: Additional Information
-  info:
-    - item: Active Security Clearance
+title: Additional Information
+info:
+- item: Active Security Clearance
 
 skills:
-  title: Skills &amp; Proficiency
-  toolset:
-    - name: Data Protection
-      level: 90%
+title: Skills & Proficiency
+toolset:
+- name: Cybersecurity
+level: 88%
 
-    - name: Secure Systems Administration
-      level: 86%
+- name: Secure Systems Administration
+  level: 86%
 
-    - name: Network Administration
-      level: 72%
+- name: Mission Systems & Secure Data Processing
+  level: 88%
 
-    - name: Security Frameworks
-      level: 88%
+- name: VMware / Virtualization
+  level: 72%
 
-    - name: Full-Stack Development
-      level: 70%
+- name: Technical Support & Troubleshooting
+  level: 88%
 
-    - name: Web Design & Branding
-      level: 78%
+- name: Python / FastAPI
+  level: 72%
+
+- name: React / Firebase
+  level: 75%
+
+- name: Identity & Authentication Systems
+  level: 80%
 
 footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="mailto:marilyn_stephens@hotmail.com" target="_blank">Marilyn</a>
+Designed with <i class="fas fa-heart"></i> by <a href="mailto:marilyn_stephens@hotmail.com" target="_blank">Marilyn</a>
