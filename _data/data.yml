@@ -1,196 +1,191 @@
 sidebar:
 position: right
-about: True
-education: True
+about: true
+education: true
 
-Profile
+Profile information
 
-name: Marilyn Stephens
-tagline: Computer Systems Analyst | Cybersecurity Professional
-avatar: profile.jpg
+name: "Marilyn Stephens"
+tagline: "Computer Systems Analyst | Cybersecurity Professional"
+avatar: "profile.jpg"
 
-Contact
+Sidebar links
 
-email: marilyn_stephens@hotmail.com
-phone: 757-218-0565
-timezone: America/New_York
-citizenship: USA
-website: hashhumanity.world
-linkedin: marilynstephens
-github: Marilyn2015
+email: "marilyn_stephens@hotmail.com"
+phone: "757-218-0565"
+timezone: "America/New_York"
+citizenship: "USA"
+website: "hashhumanity.world"
+linkedin: "marilynstephens"
 xing:
+github: "Marilyn2015"
 gitlab:
 bitbucket:
 twitter:
 stack-overflow:
 codewars:
 goodreads:
-pdf: /Resume/resume.pdf
+pdf: "/Resume/resume.pdf"
 
 interests:
-title: Professional Interests
+title: "Interests"
 info:
-- item: Cybersecurity & Secure Systems
-link: ""
+- item: "Physics & Documentaries"
+link: "https://phys.org"
 
-  - item: Privacy-Preserving Identity
-    link: ""
-
-  - item: Artificial Intelligence
-    link: ""
+  - item: "AI & Large Language Models"
+    link: "https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai"
 
 career-profile:
-title: Professional Profile
+title: "Professional Profile"
 summary: |
-Computer Systems Analyst and cybersecurity professional supporting United States Air Force operations in secure DoD environments. Experience spans mission systems, secure data processing, systems administration, communications, cybersecurity, virtualization, and technical troubleshooting across Air Force and Navy environments.
+Computer Systems Analyst and cybersecurity professional currently supporting United States Air Force operations in a secure DoD environment. My experience includes mission systems, secure data processing, systems administration, communications, cybersecurity, virtualization, and technical troubleshooting across Air Force and Navy environments.
 
-CompTIA CySA+, Security+, and A+ certified with an active security clearance. Experienced in environments where system availability, data integrity, security controls, and operational accuracy are critical. Technical background includes mission-data systems, cryptographic key updates, system hardening, VMware virtualization, CAC authentication, remote support, and classified-system operations.
+I hold CompTIA CySA+, Security+, and A+ certifications and an active security clearance. My background combines hands-on operational support with secure systems work in environments where data integrity, reliability, security, and accuracy are critical.
 
-Beyond my professional systems work, I design and develop privacy-focused software using React, Firebase, Python, FastAPI, WebAuthn/passkeys, biometric verification, and zero-knowledge technologies.
+In addition to my professional systems work, I design and develop privacy-focused software using React, Firebase, Python, FastAPI, biometric verification, passkeys/WebAuthn, and zero-knowledge technology.
 
 education:
-title: Education
+title: "Education"
 info:
-- degree: Computer Science / Information Technology
-university: Virginia Peninsula Community College
-time: 2021–2024
+- degree: "Computer Science / Information Technology"
+university: "Virginia Peninsula Community College"
+time: "2021-2024"
 details: |
-Non-degree coursework in Computer Science and Information Technology with an emphasis on industry certification and practical technical development.
+Non-degree coursework in Computer Science and Information Technology with a focus on practical technical skills and industry certifications.
 
-- degree: High School Diploma
-  university: Bethel High School | Hampton, VA
-  time: 1997–2001
+- degree: "High School Diploma"
+  university: "Bethel High School | Hampton, VA"
+  time: "1997-2001"
   details: |
     Pegasus Program
 
 experiences:
-title: Professional Experience
+title: "Professional Experience"
 info:
-- role: Computer Systems Analyst
-time: Sep 2023–Feb 2024 | Mar 2024–Present
-company: TDX Combat Training Systems | Newport News, VA
+- role: "Computer Systems Analyst"
+time: "Sep 2023-Feb 2024; Mar 2024-Present"
+company: "TDX Combat Training Systems | Newport News, VA"
 details: |
-Support mission-critical systems used during live United States Air Force flight operations and post-flight debriefing within secure DoD environments.
+Support mission systems used during live United States Air Force flight operations and post-flight debriefing in secure DoD environments.
 
-    Securely process and transfer mission data through SIS and PCDS to support real-time flight visualization and accurate post-mission debriefing.
+    Securely process and transfer mission data using SIS and PCDS to support real-time flight visualization and accurate post-mission debriefing.
 
     Support LMOC operations, radio communications, and classified systems and data within SAPF environments.
 
-    Perform monthly cryptographic key updates and provide hands-on support for Link 16 key loading, system patching, updates, troubleshooting, and security hardening.
+    Perform monthly cryptographic key updates with hands-on experience supporting Link 16 key loading, system patching, updates, troubleshooting, and security hardening.
 
-    Contributed to TEMPEST documentation and facility-transition activities involving secure-system requirements.
+    Contributed to TEMPEST documentation and facility transition activities involving secure-system requirements.
 
-    Provide operational support across PCDS, ANGEL, ICADS, SolarWinds, MSCT, VMware, and Horizon environments.
+    Work with PCDS, ANGEL, ICADS, SolarWinds, MSCT, VMware, and Horizon environments.
 
-- role: Virtualization & Storage Technician
-  time: Feb 2024–Mar 2024
-  company: Fusion Mastech
+- role: "Virtualization & Storage Technician"
+  time: "Feb 2024-Mar 2024"
+  company: "Fusion Mastech"
   details: |
-    Monitored virtualized infrastructure supporting multiple military installations, identifying system errors and operational issues affecting virtual machines.
+    Monitored virtual machines supporting multiple military installations and identified system errors and operational issues.
 
-    Performed initial troubleshooting, controlled VM shutdowns, incident documentation, and escalation of issues requiring additional technical support.
+    Performed basic VM troubleshooting, controlled shutdowns when required, documented incidents, and submitted tickets for issues requiring additional technical support.
 
-    Developed hands-on familiarity with VMware virtualization and VMware ESXi environments.
+    Gained hands-on experience with VMware and VMware ESXi environments.
 
-- role: Technical Support
-  time: Feb 2022
-  company: SAIC
+- role: "Technical Support"
+  time: "Feb 2022"
+  company: "SAIC"
   details: |
-    Provided technical support to United States Navy users across authentication, communications, email, and workstation environments.
+    Provided technical support for United States Navy users across authentication, communications, email, and workstation environments.
 
-    Diagnosed and resolved CAC certificate and authentication problems, Microsoft Teams issues, Microsoft Exchange problems, and Flank Speed email incidents.
+    Troubleshot CAC certificate and authentication issues, Microsoft Teams, Microsoft Exchange, and Flank Speed email.
 
     Used MEMC and remote-access tools to connect to user systems, diagnose technical problems, and restore functionality.
 
-- role: Owner
-  time: Aug 2013–Aug 2023
-  company: Virginia Natural Cleaning Solutions | Hampton, VA
+- role: "Owner"
+  time: "Aug 2013-Aug 2023"
+  company: "Virginia Natural Cleaning Solutions | Hampton, VA"
   details: |
-    Founded and operated Virginia Natural Cleaning Solutions, managing client acquisition, service delivery, finances, vendors, inventory, marketing, and bookkeeping.
+    Founded and operated Virginia Natural Cleaning Solutions, managing customers, marketing, finances, vendors, inventory, bookkeeping, and day-to-day operations.
 
     Established the company as a certified SWaM vendor and secured multiple HUD contracts.
 
-    Grew the business from an initial client base into an established operation within 18 months.
+    Grew the business from one or two initial clients into an established operation within 18 months.
 
-- role: Lead Leasing Consultant
-  time: Nov 2017–Feb 2022
-  company: SL Nusbaum Realty Co. | Newport News, VA
+- role: "Lead Leasing Consultant"
+  time: "Nov 2017-Feb 2022"
+  company: "SL Nusbaum Realty Co. | Newport News, VA"
   details: |
-    Managed leasing operations, applications, compliance documentation, property inspections, resident issues, and prospective-resident follow-up.
+    Managed leasing, applications, compliance documentation, inspections, resident issues, and prospective-resident follow-up.
 
-    Increased property occupancy from 87% to 96% within two months.
-
-    Promoted to Lead Leasing Consultant based on performance and operational responsibility.
+    Increased property occupancy from 87% to 96% within two months and was promoted to Lead Leasing Consultant.
 
 projects:
-title: Technical Projects
+title: "Technical Projects"
 intro: >
 Independent engineering work focused on secure digital identity, privacy-preserving authentication, human verification, and full-stack application development.
 
 assignments:
-- title: HumanKey / Hash Humanity
+- title: "HumanKey / Hash Humanity"
 link: "https://hashhumanity.world"
 tagline: >
-Founder and developer of HumanKey and Hash Humanity. HumanKey is a proof-of-person system designed to support one human per account while minimizing exposure of personal identity. The architecture combines AWS biometric technology for enrollment and liveness verification with duplicate-person detection, passkeys/WebAuthn, and zero-knowledge technology. I designed the supporting architecture and developed backend components using Python and FastAPI while handling privacy and security design, integration, testing, troubleshooting, and deployment. HumanKey is integrated into Hash Humanity, a full-stack React and Firebase social platform featuring real-time data, messaging, notifications, media sharing, multilingual functionality, cloud functions, and PWA support.
+I designed and built HumanKey, the proof-of-person technology behind Hash Humanity. HumanKey uses AWS biometric technology for enrollment and liveness verification, duplicate-person detection, passkeys/WebAuthn, and zero-knowledge technology to support one human per account while limiting exposure of personal identity. I developed the supporting architecture and backend using Python and FastAPI and handle privacy and security design, testing, troubleshooting, integration, and deployment. HumanKey is integrated into Hash Humanity, a React and Firebase social platform with real-time data, messaging, notifications, media sharing, multilingual support, cloud functions, and PWA functionality.
 
 certifications:
-title: Certifications
+title: "Certifications"
 list:
-- name: CompTIA Cybersecurity Analyst (CySA+)
-start: 2024
-end: 2027
-organization: CompTIA
-credentialid: CySA+
-credentialurl: https://credly.com/users/marilynstephens/badges
-credentialname: Verify Credential
+- name: "CompTIA Cybersecurity Analyst (CySA+)"
+start: "2024"
+end: "2027"
+organization: "CompTIA"
+credentialid: "CySA+"
+credentialurl: "https://credly.com/users/marilynstephens/badges"
+credentialname: "Verify Credential"
 
-- name: CompTIA Security+
-  start: 2024
-  end: 2027
-  organization: CompTIA
-  credentialid: Security+
-  credentialurl: https://credly.com/users/marilynstephens/badges
-  credentialname: Verify Credential
+- name: "CompTIA Security+"
+  start: "2024"
+  end: "2027"
+  organization: "CompTIA"
+  credentialid: "Security+"
+  credentialurl: "https://credly.com/users/marilynstephens/badges"
+  credentialname: "Verify Credential"
 
-- name: CompTIA A+
-  start: 2024
-  end: 2027
-  organization: CompTIA
-  credentialid: A+
-  credentialurl: https://credly.com/users/marilynstephens/badges
-  credentialname: Verify Credential
+- name: "CompTIA A+"
+  start: "2024"
+  end: "2027"
+  organization: "CompTIA"
+  credentialid: "A+"
+  credentialurl: "https://credly.com/users/marilynstephens/badges"
+  credentialname: "Verify Credential"
 
 additional-information:
-title: Clearance
+title: "Additional Information"
 info:
-- item: Active Security Clearance
+- item: "Active Security Clearance"
 
 skills:
-title: Technical Competencies
+title: "Skills & Proficiency"
 toolset:
-- name: Cybersecurity & System Hardening
-level: 90%
+- name: "Cybersecurity & System Hardening"
+level: "90%"
 
-- name: Secure Systems Administration
-  level: 88%
+- name: "Secure Systems Administration"
+  level: "88%"
 
-- name: Mission Systems & Data Operations
-  level: 88%
+- name: "Mission Systems & Data Operations"
+  level: "88%"
 
-- name: Technical Troubleshooting
-  level: 90%
+- name: "Technical Troubleshooting"
+  level: "90%"
 
-- name: VMware & Virtualization
-  level: 72%
+- name: "VMware & Virtualization"
+  level: "72%"
 
-- name: Identity & Authentication
-  level: 82%
+- name: "Identity & Authentication"
+  level: "82%"
 
-- name: React & Firebase
-  level: 78%
+- name: "React & Firebase"
+  level: "78%"
 
-- name: Python & FastAPI
-  level: 72%
+- name: "Python & FastAPI"
+  level: "72%"
 
 footer: >
-<a href="mailto:marilyn_stephens@hotmail.com">Marilyn Stephens</a> | Computer Systems Analyst & Cybersecurity Professional
+Designed by <a href="mailto:marilyn_stephens@hotmail.com" target="_blank">Marilyn Stephens</a>
